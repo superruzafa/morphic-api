@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Rectangle - Documentation</title>
+    <title>BlinkerMorph - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,7 +32,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Rectangle</h1>
+    <h1 class="page-title">BlinkerMorph</h1>
     
 
     
@@ -45,7 +45,7 @@
 <header>
     
         <h2>
-        Rectangle
+        BlinkerMorph
         </h2>
         
     
@@ -58,7 +58,7 @@
 
     
 
-    <h4 class="name" id="Rectangle"><span class="type-signature"></span>new Rectangle<span class="signature">(left<span class="signature-attributes">opt</span>, top<span class="signature-attributes">opt</span>, right<span class="signature-attributes">opt</span>, bottom<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="BlinkerMorph"><span class="type-signature"></span>new BlinkerMorph<span class="signature">(rate<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
@@ -70,7 +70,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2550">line 2550</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line6334">line 6334</a>
     </li></ul></dd>
     
 
@@ -110,7 +110,7 @@
 
 
 <div class="description">
-    Creates a Rectangle
+    Creates a BlinkerMorph
 </div>
 
 
@@ -152,7 +152,7 @@
 
         <tr>
             
-                <td class="name"><code>left</code></td>
+                <td class="name"><code>rate</code></td>
             
 
             <td class="type">
@@ -179,129 +179,12 @@
             
                 <td class="default">
                 
-                    <code>0</code>
+                    <code>2</code>
                 
                 </td>
             
 
-            <td class="description last">X coordinate of the left side</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>top</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    <code>0</code>
-                
-                </td>
-            
-
-            <td class="description last">Y coordinate of the top side</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>right</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    <code>0</code>
-                
-                </td>
-            
-
-            <td class="description last">X coordinate of the right side</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>bottom</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    <code>0</code>
-                
-                </td>
-            
-
-            <td class="description last">Y coordinate of the bottom side</td>
+            <td class="description last">How often this Morph blinks</td>
         </tr>
 
     
@@ -327,6 +210,17 @@
     </div>
 
     
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Morph.html">Morph</a></li>
+    </ul>
+
+
+    
 
     
 
@@ -346,7 +240,7 @@
 
     
 
-    <h4 class="name" id="abs"><span class="type-signature"></span>abs<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
+    <h4 class="name" id="add"><span class="type-signature"></span>add<span class="signature">(aMorph)</span><span class="type-signature"></span></h4>
 
     
 
@@ -358,7 +252,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2840">line 2840</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4341">line 4341</a>
     </li></ul></dd>
     
 
@@ -366,6 +260,11 @@
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#add">Morph#add</a>
+    </li></ul></dd>
     
 
     
@@ -398,110 +297,7 @@
 
 
 <div class="description">
-    Creates a Rectangle using the absolute values of the origin
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="amountToTranslateWithin"><span class="type-signature"></span>amountToTranslateWithin<span class="signature">(aRect)</span><span class="type-signature"> &rarr; {<a href="Point.html">Point</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2948">line 2948</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description">
-    Calculates how much this Rectangle, or at least its origin,
-needs to be moved in order to get encompassed by another one.
+    Appends a child Morph
 </div>
 
 
@@ -539,13 +335,13 @@ needs to be moved in order to get encompassed by another one.
 
         <tr>
             
-                <td class="name"><code>aRect</code></td>
+                <td class="name"><code>aMorph</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+<span class="param-type"><a href="Morph.html">Morph</a></span>
 
 
             
@@ -555,7 +351,653 @@ needs to be moved in order to get encompassed by another one.
 
             
 
-            <td class="description last">The other Rectangle</td>
+            <td class="description last">The child Morph</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="addBack"><span class="type-signature"></span>addBack<span class="signature">(aMorph)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4353">line 4353</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#addBack">Morph#addBack</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Prepends a child Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aMorph</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The child Morph</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="addChild"><span class="type-signature"></span>addChild<span class="signature">(aNode)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3101">line 3101</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#addChild">Node#addChild</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Appends a child Node
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aNode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Node.html">Node</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The node to be appended</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="addChildFirst"><span class="type-signature"></span>addChildFirst<span class="signature">(aNode)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3110">line 3110</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#addChildFirst">Node#addChildFirst</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Prepends a child Node
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aNode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Node.html">Node</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The node to be prepended</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="addShadow"><span class="type-signature"></span>addShadow<span class="signature">(off<span class="signature-attributes">opt</span>, a<span class="signature-attributes">opt</span>, color<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="ShadowMorph.html">ShadowMorph</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4228">line 4228</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#addShadow">Morph#addShadow</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Adds a shadow to this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>off</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Shadow offset</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>a</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>0.2</code>
+                
+                </td>
+            
+
+            <td class="description last">Shadow opacity</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Color.html">Color</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Shadow color</td>
         </tr>
 
     
@@ -586,7 +1028,7 @@ needs to be moved in order to get encompassed by another one.
     </dt>
     <dd>
         
-<span class="param-type"><a href="Point.html">Point</a></span>
+<span class="param-type"><a href="ShadowMorph.html">ShadowMorph</a></span>
 
 
     </dd>
@@ -600,7 +1042,7 @@ needs to be moved in order to get encompassed by another one.
 
     
 
-    <h4 class="name" id="area"><span class="type-signature"></span>area<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="allChildren"><span class="type-signature"></span>allChildren<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="Node.html">Node</a>>}</span></h4>
 
     
 
@@ -612,7 +1054,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2657">line 2657</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3154">line 3154</a>
     </li></ul></dd>
     
 
@@ -620,6 +1062,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#allChildren">Node#allChildren</a>
+    </li></ul></dd>
     
 
     
@@ -652,7 +1099,7 @@ needs to be moved in order to get encompassed by another one.
 
 
 <div class="description">
-    Gets the area
+    Gets all descendant of this Node, including itself
 </div>
 
 
@@ -688,7 +1135,7 @@ needs to be moved in order to get encompassed by another one.
     </dt>
     <dd>
         
-<span class="param-type">number</span>
+<span class="param-type">Array.&lt;<a href="Node.html">Node</a>></span>
 
 
     </dd>
@@ -702,7 +1149,7 @@ needs to be moved in order to get encompassed by another one.
 
     
 
-    <h4 class="name" id="asArray"><span class="type-signature"></span>asArray<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;number>}</span></h4>
+    <h4 class="name" id="allEntryFields"><span class="type-signature"></span>allEntryFields<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="Morph.html">Morph</a>>}</span></h4>
 
     
 
@@ -714,7 +1161,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3052">line 3052</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line5162">line 5162</a>
     </li></ul></dd>
     
 
@@ -722,6 +1169,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#allEntryFields">Morph#allEntryFields</a>
+    </li></ul></dd>
     
 
     
@@ -754,7 +1206,7 @@ needs to be moved in order to get encompassed by another one.
 
 
 <div class="description">
-    Gets the bounding box as Array
+    Gets all editable, text-like child Morphs, including itself
 </div>
 
 
@@ -790,7 +1242,7 @@ needs to be moved in order to get encompassed by another one.
     </dt>
     <dd>
         
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type">Array.&lt;<a href="Morph.html">Morph</a>></span>
 
 
     </dd>
@@ -804,7 +1256,7 @@ needs to be moved in order to get encompassed by another one.
 
     
 
-    <h4 class="name" id="asArray_xywh"><span class="type-signature"></span>asArray_xywh<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;number>}</span></h4>
+    <h4 class="name" id="allLeafs"><span class="type-signature"></span>allLeafs<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;Nodes>}</span></h4>
 
     
 
@@ -816,7 +1268,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3060">line 3060</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3200">line 3200</a>
     </li></ul></dd>
     
 
@@ -824,6 +1276,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#allLeafs">Node#allLeafs</a>
+    </li></ul></dd>
     
 
     
@@ -856,7 +1313,7 @@ needs to be moved in order to get encompassed by another one.
 
 
 <div class="description">
-    Gets the position and size as Array
+    Gets all leaf Nodes this Node has
 </div>
 
 
@@ -892,13 +1349,411 @@ needs to be moved in order to get encompassed by another one.
     </dt>
     <dd>
         
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type">Array.&lt;Nodes></span>
 
 
     </dd>
 </dl>
 
     
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="allParents"><span class="type-signature"></span>allParents<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;Nodes>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3214">line 3214</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#allParents">Node#allParents</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets all ancestors of this Node, including itself
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;Nodes></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="anyChild"><span class="type-signature"></span>anyChild<span class="signature">(aPredicate)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3182">line 3182</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#anyChild">Node#anyChild</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Checks whether a predicate stands for at least
+one descendant of this Node, including itself
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aPredicate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The function to be evaluated</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="backTab"><span class="type-signature"></span>backTab<span class="signature">(editField)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line5224">line 5224</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#backTab">Morph#backTab</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>editField</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         
@@ -918,7 +1773,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2670">line 2670</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3492">line 3492</a>
     </li></ul></dd>
     
 
@@ -926,6 +1781,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#bottom">Morph#bottom</a>
+    </li></ul></dd>
     
 
     
@@ -1020,7 +1880,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2678">line 2678</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3508">line 3508</a>
     </li></ul></dd>
     
 
@@ -1028,6 +1888,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#bottomCenter">Morph#bottomCenter</a>
+    </li></ul></dd>
     
 
     
@@ -1060,7 +1925,7 @@ needs to be moved in order to get encompassed by another one.
 
 
 <div class="description">
-    Creates a new Point from the bottom center
+    Gets the bottom center
 </div>
 
 
@@ -1122,7 +1987,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2686">line 2686</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3516">line 3516</a>
     </li></ul></dd>
     
 
@@ -1130,6 +1995,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#bottomLeft">Morph#bottomLeft</a>
+    </li></ul></dd>
     
 
     
@@ -1162,7 +2032,7 @@ needs to be moved in order to get encompassed by another one.
 
 
 <div class="description">
-    Creates a new Point from the bottom left
+    Gets the bottom left
 </div>
 
 
@@ -1224,7 +2094,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2694">line 2694</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3524">line 3524</a>
     </li></ul></dd>
     
 
@@ -1232,6 +2102,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#bottomRight">Morph#bottomRight</a>
+    </li></ul></dd>
     
 
     
@@ -1264,7 +2139,7 @@ needs to be moved in order to get encompassed by another one.
 
 
 <div class="description">
-    Creates a new Point from the bottom right
+    Gets the bottom right
 </div>
 
 
@@ -1326,7 +2201,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2702">line 2702</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3532">line 3532</a>
     </li></ul></dd>
     
 
@@ -1334,6 +2209,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#boundingBox">Morph#boundingBox</a>
+    </li></ul></dd>
     
 
     
@@ -1366,7 +2246,7 @@ needs to be moved in order to get encompassed by another one.
 
 
 <div class="description">
-    Gets the bounding box Rectangle
+    Gets the bounding box
 </div>
 
 
@@ -1428,7 +2308,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2710">line 2710</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3500">line 3500</a>
     </li></ul></dd>
     
 
@@ -1436,6 +2316,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#center">Morph#center</a>
+    </li></ul></dd>
     
 
     
@@ -1468,7 +2353,7 @@ needs to be moved in order to get encompassed by another one.
 
 
 <div class="description">
-    Creates a new Point from the center
+    Gets the center
 </div>
 
 
@@ -1518,7 +2403,7 @@ needs to be moved in order to get encompassed by another one.
 
     
 
-    <h4 class="name" id="containsPoint"><span class="type-signature"></span>containsPoint<span class="signature">(aPoint)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="changed"><span class="type-signature"></span>changed<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -1530,7 +2415,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2978">line 2978</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4280">line 4280</a>
     </li></ul></dd>
     
 
@@ -1538,6 +2423,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#changed">Morph#changed</a>
+    </li></ul></dd>
     
 
     
@@ -1570,7 +2460,2755 @@ needs to be moved in order to get encompassed by another one.
 
 
 <div class="description">
-    Checks whether this Rectangle contains a Point
+    Invoked whenever the region of this Morph should be redrawn
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="childChanged"><span class="type-signature"></span>childChanged<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4311">line 4311</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#childChanged">Morph#childChanged</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Invoked whenever some of its children's region
+should be redrawn
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="contextMenu"><span class="type-signature"></span>contextMenu<span class="signature">()</span><span class="type-signature"> &rarr; {MenuMorph}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4933">line 4933</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#contextMenu">Morph#contextMenu</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the context menu
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">MenuMorph</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="copy"><span class="type-signature"></span>copy<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Morph.html">Morph</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4472">line 4472</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#copy">Morph#copy</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Creates a duplicate, excluding its children
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="corners"><span class="type-signature"></span>corners<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3539">line 3539</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#corners">Morph#corners</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the Morph vertices as Array
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="depth"><span class="type-signature"></span>depth<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3143">line 3143</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#depth">Node#depth</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the depth (how many ancestors this Node has)
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="destroy"><span class="type-signature"></span>destroy<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3412">line 3412</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#destroy">Morph#destroy</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Releases all taken resources
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="developersMenu"><span class="type-signature"></span>developersMenu<span class="signature">()</span><span class="type-signature"> &rarr; {MenuMorph}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4979">line 4979</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#developersMenu">Morph#developersMenu</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the developer menu
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">MenuMorph</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="drawCachedTexture"><span class="type-signature"></span>drawCachedTexture<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3971">line 3971</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#drawCachedTexture">Morph#drawCachedTexture</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Draws the current texture as a pattern on this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="drawNew"><span class="type-signature"></span>drawNew<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3942">line 3942</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#drawNew">Morph#drawNew</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Draws this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="drawOn"><span class="type-signature"></span>drawOn<span class="signature">(aCanvas, aRect<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4002">line 4002</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#drawOn">Morph#drawOn</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Draws this Morph in a canvas and optionally clips it
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aCanvas</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLCanvasElement</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Target canvas</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aRect</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Clipping rectangle</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="drawTexture"><span class="type-signature"></span>drawTexture<span class="signature">(url)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3959">line 3959</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#drawTexture">Morph#drawTexture</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Loads an external texture (image) and draws it as a pattern on this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">URL of the image</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="evaluateString"><span class="type-signature"></span>evaluateString<span class="signature">(code)</span><span class="type-signature"> &rarr; {*}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line5278">line 5278</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#evaluateString">Morph#evaluateString</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Evaluates some arbitrary JavaScript code in the Morph context
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Arbitrary JavaScript code</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Evaluated result
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">*</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="extent"><span class="type-signature"></span>extent<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Point.html">Point</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3595">line 3595</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#extent">Morph#extent</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the size
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="fadeTo"><span class="type-signature"></span>fadeTo<span class="signature">(endPoint, msecs<span class="signature-attributes">opt</span>, easing<span class="signature-attributes">opt</span>, onComplete<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4673">line 4673</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fadeTo">Morph#fadeTo</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Fades this Morph and all of its children
+into some opacity and then restores the original one
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>endPoint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Target position</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>msecs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>100</code>
+                
+                </td>
+            
+
+            <td class="description last">Animation duration in milliseconds</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>easing</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Animation easing function</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onComplete</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Callback called once the animation is done</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="forAllChildren"><span class="type-signature"></span>forAllChildren<span class="signature">(aFunction)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3167">line 3167</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#forAllChildren">Node#forAllChildren</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Applies a function to all descendant of this Node, including itself
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aFunction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The function to be applied</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="fullBounds"><span class="type-signature"></span>fullBounds<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3620">line 3620</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullBounds">Morph#fullBounds</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the bounding box that encompasses this Morph
+and all of its visible children
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="fullBoundsNoShadow"><span class="type-signature"></span>fullBoundsNoShadow<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3637">line 3637</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullBoundsNoShadow">Morph#fullBoundsNoShadow</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the bounding box that encompasses this Morph
+and all of its visible children,
+excluding those which are shadows
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="fullChanged"><span class="type-signature"></span>fullChanged<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4296">line 4296</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullChanged">Morph#fullChanged</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Invoked whenever the region of this Morph
+and all of its children should be redrawn
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="fullCopy"><span class="type-signature"></span>fullCopy<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Morph.html">Morph</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4484">line 4484</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullCopy">Morph#fullCopy</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Creates a duplicate, including its children
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="fullDrawOn"><span class="type-signature"></span>fullDrawOn<span class="signature">(aCanvas, aRect)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4046">line 4046</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullDrawOn">Morph#fullDrawOn</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Draws this Morph and all of its children
+in a canvas and optionally clips it
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aCanvas</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLCanvasElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aRect</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="fullImage"><span class="type-signature"></span>fullImage<span class="signature">()</span><span class="type-signature"> &rarr; {HTMLCanvasElement}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4107">line 4107</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullImage">Morph#fullImage</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Creates an image of this Morph and all of its children
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLCanvasElement</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="fullImageClassic"><span class="type-signature"></span>fullImageClassic<span class="signature">()</span><span class="type-signature"> &rarr; {HTMLCanvasElement}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4092">line 4092</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullImageClassic">Morph#fullImageClassic</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Creates an image of this Morph and all of its children
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLCanvasElement</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getPixelColor"><span class="type-signature"></span>getPixelColor<span class="signature">(aPoint)</span><span class="type-signature"> &rarr; {<a href="Color.html">Color</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4429">line 4429</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#getPixelColor">Morph#getPixelColor</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the color given some position
 </div>
 
 
@@ -1624,7 +5262,7 @@ needs to be moved in order to get encompassed by another one.
 
             
 
-            <td class="description last">The Point</td>
+            <td class="description last">The position</td>
         </tr>
 
     
@@ -1655,7 +5293,7 @@ needs to be moved in order to get encompassed by another one.
     </dt>
     <dd>
         
-<span class="param-type">boolean</span>
+<span class="param-type"><a href="Color.html">Color</a></span>
 
 
     </dd>
@@ -1669,7 +5307,7 @@ needs to be moved in order to get encompassed by another one.
 
     
 
-    <h4 class="name" id="containsRectangle"><span class="type-signature"></span>containsRectangle<span class="signature">(aRect)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="getShadow"><span class="type-signature"></span>getShadow<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="ShadowMorph.html">ShadowMorph</a>}</span></h4>
 
     
 
@@ -1681,7 +5319,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2987">line 2987</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4242">line 4242</a>
     </li></ul></dd>
     
 
@@ -1689,6 +5327,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#getShadow">Morph#getShadow</a>
+    </li></ul></dd>
     
 
     
@@ -1721,158 +5364,7 @@ needs to be moved in order to get encompassed by another one.
 
 
 <div class="description">
-    Checks whether this Rectangle contains another one
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>aRect</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The other Rectangle</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="copy"><span class="type-signature"></span>copy<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2579">line 2579</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description">
-    Creates a duplicate
+    Gets the oldest shadow
 </div>
 
 
@@ -1908,7 +5400,7 @@ needs to be moved in order to get encompassed by another one.
     </dt>
     <dd>
         
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+<span class="param-type"><a href="ShadowMorph.html">ShadowMorph</a></span>
 
 
     </dd>
@@ -1922,7 +5414,7 @@ needs to be moved in order to get encompassed by another one.
 
     
 
-    <h4 class="name" id="corners"><span class="type-signature"></span>corners<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="Point.html">Point</a>>}</span></h4>
+    <h4 class="name" id="glideTo"><span class="type-signature"></span>glideTo<span class="signature">(endPoint, msecs<span class="signature-attributes">opt</span>, easing<span class="signature-attributes">opt</span>, onComplete<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
@@ -1934,7 +5426,7 @@ needs to be moved in order to get encompassed by another one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2720">line 2720</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4645">line 4645</a>
     </li></ul></dd>
     
 
@@ -1942,6 +5434,11 @@ needs to be moved in order to get encompassed by another one.
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#glideTo">Morph#glideTo</a>
+    </li></ul></dd>
     
 
     
@@ -1974,110 +5471,7 @@ needs to be moved in order to get encompassed by another one.
 
 
 <div class="description">
-    Gets the Rectangle vertices as Array
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Array.&lt;<a href="Point.html">Point</a>></span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="eq"><span class="type-signature"></span>eq<span class="signature">(aRect)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2831">line 2831</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description">
-    Checks whether the origin and opposite corner
-of this and another Rectangle are equal
+    Glides this Morph into some position
 </div>
 
 
@@ -2103,7 +5497,11 @@ of this and another Rectangle are equal
         <th>Type</th>
 
         
+        <th>Attributes</th>
+        
 
+        
+        <th>Default</th>
         
 
         <th class="last">Description</th>
@@ -2115,438 +5513,151 @@ of this and another Rectangle are equal
 
         <tr>
             
-                <td class="name"><code>aRect</code></td>
+                <td class="name"><code>endPoint</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+<span class="param-type"><a href="Point.html">Point</a></span>
 
 
             
             </td>
 
             
-
-            
-
-            <td class="description last">The other Rectangle</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code></code></td>
-            
-
-            <td class="type">
-            
+                <td class="attributes">
                 
-<span class="param-type">boolean</span>
 
+                
 
-            
-            </td>
-
-            
-
+                
+                </td>
             
 
-            <td class="description last"></td>
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Target position</td>
         </tr>
 
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="expandBy"><span class="type-signature"></span>expandBy<span class="signature">(delta)</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2867">line 2867</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description">
-    Creates an outer version of this Rectangle
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
     
 
         <tr>
             
-                <td class="name"><code>delta</code></td>
+                <td class="name"><code>msecs</code></td>
             
 
             <td class="type">
             
                 
 <span class="param-type">number</span>
-|
-
-<span class="param-type"><a href="Point.html">Point</a></span>
 
 
             
             </td>
 
             
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
 
+                
+
+                
+                </td>
             
 
-            <td class="description last">Outer difference</td>
+            
+                <td class="default">
+                
+                    <code>100</code>
+                
+                </td>
+            
+
+            <td class="description last">Animation duration in milliseconds</td>
         </tr>
 
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="extent"><span class="type-signature"></span>extent<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Point.html">Point</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2731">line 2731</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description">
-    Gets the difference between the opposite corner and the origin
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Point.html">Point</a></span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="growBy"><span class="type-signature"></span>growBy<span class="signature">(delta)</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2880">line 2880</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description">
-    Creates a version of this Rectangle by expanding its opposite corner
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
     
 
         <tr>
             
-                <td class="name"><code>delta</code></td>
+                <td class="name"><code>easing</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">String</span>
 |
 
-<span class="param-type"><a href="Point.html">Point</a></span>
+<span class="param-type">function</span>
 
 
             
             </td>
 
             
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
 
+                
+
+                
+                </td>
             
 
-            <td class="description last">Expansion difference</td>
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Animation easing function</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onComplete</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Callback called once the animation is done</td>
         </tr>
 
     
@@ -2566,24 +5677,6 @@ of this and another Rectangle are equal
 
 
 
-<h5>Returns:</h5>
-
-        
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
-
-
-    </dd>
-</dl>
-
-    
 
 
         
@@ -2603,7 +5696,7 @@ of this and another Rectangle are equal
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2739">line 2739</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3611">line 3611</a>
     </li></ul></dd>
     
 
@@ -2611,6 +5704,11 @@ of this and another Rectangle are equal
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#height">Morph#height</a>
+    </li></ul></dd>
     
 
     
@@ -2693,7 +5791,7 @@ of this and another Rectangle are equal
 
     
 
-    <h4 class="name" id="init"><span class="type-signature"></span>init<span class="signature">(originPoint, cornerPoint)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="hide"><span class="type-signature"></span>hide<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -2705,7 +5803,7 @@ of this and another Rectangle are equal
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2560">line 2560</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4060">line 4060</a>
     </li></ul></dd>
     
 
@@ -2713,6 +5811,11 @@ of this and another Rectangle are equal
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#hide">Morph#hide</a>
+    </li></ul></dd>
     
 
     
@@ -2745,7 +5848,7 @@ of this and another Rectangle are equal
 
 
 <div class="description">
-    Sets the origin and opposite corner Points
+    Hides this Morph and all of its children
 </div>
 
 
@@ -2758,78 +5861,6 @@ of this and another Rectangle are equal
 
 
 
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>originPoint</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Point.html">Point</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Origin Point</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>cornerPoint</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Point.html">Point</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Opposite corner</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
 
 
 
@@ -2849,7 +5880,7 @@ of this and another Rectangle are equal
 
     
 
-    <h4 class="name" id="insetBy"><span class="type-signature"></span>insetBy<span class="signature">(delta)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="hierarchyMenu"><span class="type-signature"></span>hierarchyMenu<span class="signature">()</span><span class="type-signature"> &rarr; {MenuMorph}</span></h4>
 
     
 
@@ -2861,7 +5892,7 @@ of this and another Rectangle are equal
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2854">line 2854</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4954">line 4954</a>
     </li></ul></dd>
     
 
@@ -2869,6 +5900,11 @@ of this and another Rectangle are equal
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#hierarchyMenu">Morph#hierarchyMenu</a>
+    </li></ul></dd>
     
 
     
@@ -2901,7 +5937,7 @@ of this and another Rectangle are equal
 
 
 <div class="description">
-    Creates a inner version of this Rectangle
+    Gets the ancestors' menus
 </div>
 
 
@@ -2912,191 +5948,6 @@ of this and another Rectangle are equal
 
 
 
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>delta</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type"><a href="Point.html">Point</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Inner difference</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="intersect"><span class="type-signature"></span>intersect<span class="signature">(aRect)</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2893">line 2893</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description">
-    Creates the intersecting Rectangle between this and another one
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>aRect</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The other Rectangle</td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -3122,7 +5973,7 @@ of this and another Rectangle are equal
     </dt>
     <dd>
         
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+<span class="param-type">MenuMorph</span>
 
 
     </dd>
@@ -3136,7 +5987,7 @@ of this and another Rectangle are equal
 
     
 
-    <h4 class="name" id="intersects"><span class="type-signature"></span>intersects<span class="signature">(aRect)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="hint"><span class="type-signature"></span>hint<span class="signature">(msg)</span><span class="type-signature"></span></h4>
 
     
 
@@ -3148,7 +5999,7 @@ of this and another Rectangle are equal
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2997">line 2997</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4753">line 4753</a>
     </li></ul></dd>
     
 
@@ -3156,6 +6007,11 @@ of this and another Rectangle are equal
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#hint">Morph#hint</a>
+    </li></ul></dd>
     
 
     
@@ -3188,7 +6044,7 @@ of this and another Rectangle are equal
 
 
 <div class="description">
-    Checks whether this and another Rectangle intersect
+    Shows a hint near this Morph
 </div>
 
 
@@ -3226,13 +6082,13 @@ of this and another Rectangle are equal
 
         <tr>
             
-                <td class="name"><code>aRect</code></td>
+                <td class="name"><code>msg</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+<span class="param-type">String</span>
 
 
             
@@ -3242,7 +6098,686 @@ of this and another Rectangle are equal
 
             
 
-            <td class="description last">The other Rectangle</td>
+            <td class="description last">Hint message</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="inform"><span class="type-signature"></span>inform<span class="signature">(msg)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4772">line 4772</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#inform">Morph#inform</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Shows an information dialog near this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>msg</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Dialog message</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="init"><span class="type-signature"></span>init<span class="signature">(rate<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line6342">line 6342</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Morph.html#init">Morph#init</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Initializes this BlinkerMorph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>rate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>2</code>
+                
+                </td>
+            
+
+            <td class="description last">How often this Morph blinks</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="inspect"><span class="type-signature"></span>inspect<span class="signature">(anotherObject)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4911">line 4911</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#inspect">Morph#inspect</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Shows a inspector dialog near this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>anotherObject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Dialog message</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isPickedUp"><span class="type-signature"></span>isPickedUp<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4592">line 4592</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#isPickedUp">Morph#isPickedUp</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Checks whether this Morph is being picked up
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isTouching"><span class="type-signature"></span>isTouching<span class="signature">(otherMorph)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line5298">line 5298</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#isTouching">Morph#isTouching</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Checks whether this Morph is touching another one
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>otherMorph</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The other Morph</td>
         </tr>
 
     
@@ -3287,7 +6822,7 @@ of this and another Rectangle are equal
 
     
 
-    <h4 class="name" id="isNearTo"><span class="type-signature"></span>isNearTo<span class="signature">(aRect, threshold)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="isTransparentAt"><span class="type-signature"></span>isTransparentAt<span class="signature">(aPoint)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
 
     
 
@@ -3299,7 +6834,7 @@ of this and another Rectangle are equal
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3012">line 3012</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4447">line 4447</a>
     </li></ul></dd>
     
 
@@ -3307,6 +6842,11 @@ of this and another Rectangle are equal
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#isTransparentAt">Morph#isTransparentAt</a>
+    </li></ul></dd>
     
 
     
@@ -3339,8 +6879,7 @@ of this and another Rectangle are equal
 
 
 <div class="description">
-    Checks whether the minimum distance between this and another Rectangle
-is equal or lower than a given threshold
+    Checks whether a pixel is transparent at some position
 </div>
 
 
@@ -3378,13 +6917,13 @@ is equal or lower than a given threshold
 
         <tr>
             
-                <td class="name"><code>aRect</code></td>
+                <td class="name"><code>aPoint</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+<span class="param-type"><a href="Point.html">Point</a></span>
 
 
             
@@ -3394,30 +6933,7 @@ is equal or lower than a given threshold
 
             
 
-            <td class="description last">The other Rectangle</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>threshold</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The threshold</td>
+            <td class="description last">The position</td>
         </tr>
 
     
@@ -3455,6 +6971,144 @@ is equal or lower than a given threshold
 </dl>
 
     
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="keepWithin"><span class="type-signature"></span>keepWithin<span class="signature">(aMorph)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3798">line 3798</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#keepWithin">Morph#keepWithin</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Moves this Morph in such a way it's encompassed by another Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aMorph</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The other Morph</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         
@@ -3474,7 +7128,7 @@ is equal or lower than a given threshold
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2747">line 2747</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3468">line 3468</a>
     </li></ul></dd>
     
 
@@ -3482,6 +7136,11 @@ is equal or lower than a given threshold
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#left">Morph#left</a>
+    </li></ul></dd>
     
 
     
@@ -3576,7 +7235,7 @@ is equal or lower than a given threshold
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2755">line 2755</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3547">line 3547</a>
     </li></ul></dd>
     
 
@@ -3584,6 +7243,11 @@ is equal or lower than a given threshold
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#leftCenter">Morph#leftCenter</a>
+    </li></ul></dd>
     
 
     
@@ -3616,7 +7280,7 @@ is equal or lower than a given threshold
 
 
 <div class="description">
-    Creates a Point from the left center
+    Gets the left center
 </div>
 
 
@@ -3666,7 +7330,7 @@ is equal or lower than a given threshold
 
     
 
-    <h4 class="name" id="merge"><span class="type-signature"></span>merge<span class="signature">(aRect)</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
+    <h4 class="name" id="move"><span class="type-signature"></span>move<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -3678,7 +7342,7 @@ is equal or lower than a given threshold
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2905">line 2905</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4726">line 4726</a>
     </li></ul></dd>
     
 
@@ -3686,6 +7350,11 @@ is equal or lower than a given threshold
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#move">Morph#move</a>
+    </li></ul></dd>
     
 
     
@@ -3718,7 +7387,96 @@ is equal or lower than a given threshold
 
 
 <div class="description">
-    Creates a Rectangle that encompass this and another one
+    Shows a handle to allow the user to move this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="moveBy"><span class="type-signature"></span>moveBy<span class="signature">(delta)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3671">line 3671</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#moveBy">Morph#moveBy</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Moves this Morph
 </div>
 
 
@@ -3756,13 +7514,16 @@ is equal or lower than a given threshold
 
         <tr>
             
-                <td class="name"><code>aRect</code></td>
+                <td class="name"><code>delta</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+<span class="param-type">number</span>
+|
+
+<span class="param-type"><a href="Point.html">Point</a></span>
 
 
             
@@ -3772,7 +7533,235 @@ is equal or lower than a given threshold
 
             
 
-            <td class="description last">The other Rectangle</td>
+            <td class="description last">Movement increment</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="moveCenter"><span class="type-signature"></span>moveCenter<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4738">line 4738</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#moveCenter">Morph#moveCenter</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Shows a handle to allow the user to move the center of this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="nextEntryField"><span class="type-signature"></span>nextEntryField<span class="signature">(current)</span><span class="type-signature"> &rarr; {<a href="Morph.html">Morph</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line5176">line 5176</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#nextEntryField">Morph#nextEntryField</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the next to the current,
+editable, text-like child Morph, including itself
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>current</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
         </tr>
 
     
@@ -3803,7 +7792,7 @@ is equal or lower than a given threshold
     </dt>
     <dd>
         
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+<span class="param-type"><a href="Morph.html">Morph</a></span>
 
 
     </dd>
@@ -3817,7 +7806,7 @@ is equal or lower than a given threshold
 
     
 
-    <h4 class="name" id="mergeWith"><span class="type-signature"></span>mergeWith<span class="signature">(aRect)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="overlappedMorphs"><span class="type-signature"></span>overlappedMorphs<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="Morph.html">Morph</a>>}</span></h4>
 
     
 
@@ -3829,7 +7818,7 @@ is equal or lower than a given threshold
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2916">line 2916</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4402">line 4402</a>
     </li></ul></dd>
     
 
@@ -3837,6 +7826,11 @@ is equal or lower than a given threshold
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#overlappedMorphs">Morph#overlappedMorphs</a>
+    </li></ul></dd>
     
 
     
@@ -3869,7 +7863,114 @@ is equal or lower than a given threshold
 
 
 <div class="description">
-    Changes this Rectangle to encompass this and another one
+    Gets what other Morphs this Morph is overlapping with
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;<a href="Morph.html">Morph</a>></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="overlappingImage"><span class="type-signature"></span>overlappingImage<span class="signature">(otherMorph)</span><span class="type-signature"> &rarr; {HTMLCanvasElement}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line5320">line 5320</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#overlappingImage">Morph#overlappingImage</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the image where this Morph intersects with another one
 </div>
 
 
@@ -3907,13 +8008,13 @@ is equal or lower than a given threshold
 
         <tr>
             
-                <td class="name"><code>aRect</code></td>
+                <td class="name"><code>otherMorph</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+<span class="param-type"><a href="Morph.html">Morph</a></span>
 
 
             
@@ -3923,7 +8024,884 @@ is equal or lower than a given threshold
 
             
 
-            <td class="description last">The other Rectangle</td>
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLCanvasElement</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="parentThatIsA"><span class="type-signature"></span>parentThatIsA<span class="signature">(constructor)</span><span class="type-signature"> &rarr; {<a href="Node.html">Node</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3243">line 3243</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#parentThatIsA">Node#parentThatIsA</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the first ancestor, including this Node,
+which is instance of a given constructor
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>constructor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The constructor function</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Node.html">Node</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="parentThatIsAnyOf"><span class="type-signature"></span>parentThatIsAnyOf<span class="signature">(constructors)</span><span class="type-signature"> &rarr; {<a href="Node.html">Node</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3260">line 3260</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#parentThatIsAnyOf">Node#parentThatIsAnyOf</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the first ancestor, including this Node,
+which is instance of at least one of a given list of constructors
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>constructors</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;function()></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The constructor functions</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Node.html">Node</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="penTrails"><span class="type-signature"></span>penTrails<span class="signature">()</span><span class="type-signature"> &rarr; {HTMLCanvasElement}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4272">line 4272</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#penTrails">Morph#penTrails</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLCanvasElement</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="perish"><span class="type-signature"></span>perish<span class="signature">(msecs<span class="signature-attributes">opt</span>, onComplete<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4703">line 4703</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#perish">Morph#perish</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Fades out this Morph and all of its children
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>msecs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>100</code>
+                
+                </td>
+            
+
+            <td class="description last">Animation duration in milliseconds</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onComplete</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Callback called once the animation is done</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="pickColor"><span class="type-signature"></span>pickColor<span class="signature">(msg, callback<span class="signature-attributes">opt</span>, environment<span class="signature-attributes">opt</span>, defaultContents<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4882">line 4882</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#pickColor">Morph#pickColor</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Shows a color picker dialog near this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>msg</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Dialog message</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Called with the prompt result</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>environment</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>defaultContents</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Color.html">Color</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Prompt default color</td>
         </tr>
 
     
@@ -3962,7 +8940,7 @@ is equal or lower than a given threshold
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2819">line 2819</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3587">line 3587</a>
     </li></ul></dd>
     
 
@@ -3970,6 +8948,11 @@ is equal or lower than a given threshold
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#position">Morph#position</a>
+    </li></ul></dd>
     
 
     
@@ -4002,7 +8985,7 @@ is equal or lower than a given threshold
 
 
 <div class="description">
-    Gets the origin
+    Gets the position
 </div>
 
 
@@ -4052,7 +9035,7 @@ is equal or lower than a given threshold
 
     
 
-    <h4 class="name" id="right"><span class="type-signature"></span>right<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Point.html">Point</a>}</span></h4>
+    <h4 class="name" id="previousEntryField"><span class="type-signature"></span>previousEntryField<span class="signature">(current)</span><span class="type-signature"> &rarr; {<a href="Morph.html">Morph</a>}</span></h4>
 
     
 
@@ -4064,7 +9047,7 @@ is equal or lower than a given threshold
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2763">line 2763</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line5193">line 5193</a>
     </li></ul></dd>
     
 
@@ -4072,6 +9055,881 @@ is equal or lower than a given threshold
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#previousEntryField">Morph#previousEntryField</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the previous to the current,
+editable, text-like child Morph, including itself
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>current</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="prompt"><span class="type-signature"></span>prompt<span class="signature">(msg, callback<span class="signature-attributes">opt</span>, environment<span class="signature-attributes">opt</span>, defaultContents<span class="signature-attributes">opt</span>, width<span class="signature-attributes">opt</span>, floorNum<span class="signature-attributes">opt</span>, ceilingNum<span class="signature-attributes">opt</span>, isRounded<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4799">line 4799</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#prompt">Morph#prompt</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Shows an prompt dialog near this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>msg</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Dialog message</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Called with the prompt result</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>environment</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>defaultContents</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Prompt default text</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Minimum width</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>floorNum</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Minimum accepted numeric value</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ceilingNum</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Maximum accepted numeric value</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isRounded</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Whether the numerical result must be rounded</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="removeChild"><span class="type-signature"></span>removeChild<span class="signature">(aNode)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3119">line 3119</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#removeChild">Node#removeChild</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Removes a child Node
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aNode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Node.html">Node</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The node to be removed</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="removeShadow"><span class="type-signature"></span>removeShadow<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="ShadowMorph.html">ShadowMorph</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4259">line 4259</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#removeShadow">Morph#removeShadow</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Removes the oldest shadow
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="ShadowMorph.html">ShadowMorph</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="resize"><span class="type-signature"></span>resize<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4721">line 4721</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#resize">Morph#resize</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Shows a handle to allow the user to resize this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="right"><span class="type-signature"></span>right<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3476">line 3476</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#right">Morph#right</a>
+    </li></ul></dd>
     
 
     
@@ -4140,7 +9998,7 @@ is equal or lower than a given threshold
     </dt>
     <dd>
         
-<span class="param-type"><a href="Point.html">Point</a></span>
+<span class="param-type">number</span>
 
 
     </dd>
@@ -4166,7 +10024,7 @@ is equal or lower than a given threshold
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2771">line 2771</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3555">line 3555</a>
     </li></ul></dd>
     
 
@@ -4174,6 +10032,11 @@ is equal or lower than a given threshold
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#rightCenter">Morph#rightCenter</a>
+    </li></ul></dd>
     
 
     
@@ -4206,7 +10069,7 @@ is equal or lower than a given threshold
 
 
 <div class="description">
-    Creates a Point from the right center
+    Gets the right center
 </div>
 
 
@@ -4256,7 +10119,7 @@ is equal or lower than a given threshold
 
     
 
-    <h4 class="name" id="round"><span class="type-signature"></span>round<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
+    <h4 class="name" id="root"><span class="type-signature"></span>root<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Node.html">Node</a>}</span></h4>
 
     
 
@@ -4268,7 +10131,7 @@ is equal or lower than a given threshold
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2926">line 2926</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3132">line 3132</a>
     </li></ul></dd>
     
 
@@ -4276,6 +10139,11 @@ is equal or lower than a given threshold
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#root">Node#root</a>
+    </li></ul></dd>
     
 
     
@@ -4308,7 +10176,7 @@ is equal or lower than a given threshold
 
 
 <div class="description">
-    Creates a new Rectangle by rounding the origin and opposite corner
+    Gets the root Node of the hierarchy this Node belongs to
 </div>
 
 
@@ -4344,7 +10212,7 @@ is equal or lower than a given threshold
     </dt>
     <dd>
         
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+<span class="param-type"><a href="Node.html">Node</a></span>
 
 
     </dd>
@@ -4358,7 +10226,7 @@ is equal or lower than a given threshold
 
     
 
-    <h4 class="name" id="scaleBy"><span class="type-signature"></span>scaleBy<span class="signature">(scale)</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
+    <h4 class="name" id="scrollIntoView"><span class="type-signature"></span>scrollIntoView<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -4370,7 +10238,7 @@ is equal or lower than a given threshold
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3027">line 3027</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3823">line 3823</a>
     </li></ul></dd>
     
 
@@ -4378,6 +10246,11 @@ is equal or lower than a given threshold
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#scrollIntoView">Morph#scrollIntoView</a>
+    </li></ul></dd>
     
 
     
@@ -4410,7 +10283,97 @@ is equal or lower than a given threshold
 
 
 <div class="description">
-    Creates a Rectangle by scaling this one
+    Scrolls this Morph's first ScrollFrameMorph parent
+to make sure this Morph is visible
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setBottom"><span class="type-signature"></span>setBottom<span class="signature">(y)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3759">line 3759</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setBottom">Morph#setBottom</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the Y coordinate of the bottom side
 </div>
 
 
@@ -4448,16 +10411,13 @@ is equal or lower than a given threshold
 
         <tr>
             
-                <td class="name"><code>scale</code></td>
+                <td class="name"><code>y</code></td>
             
 
             <td class="type">
             
                 
 <span class="param-type">number</span>
-|
-
-<span class="param-type"><a href="Point.html">Point</a></span>
 
 
             
@@ -4467,7 +10427,7 @@ is equal or lower than a given threshold
 
             
 
-            <td class="description last">Scale factor or Point</td>
+            <td class="description last">Y coordinate</td>
         </tr>
 
     
@@ -4487,24 +10447,6 @@ is equal or lower than a given threshold
 
 
 
-<h5>Returns:</h5>
-
-        
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
-
-
-    </dd>
-</dl>
-
-    
 
 
         
@@ -4512,7 +10454,7 @@ is equal or lower than a given threshold
 
     
 
-    <h4 class="name" id="setTo"><span class="type-signature"></span>setTo<span class="signature">(left<span class="signature-attributes">opt</span>, top<span class="signature-attributes">opt</span>, right<span class="signature-attributes">opt</span>, bottom<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="setCenter"><span class="type-signature"></span>setCenter<span class="signature">(aPoint)</span><span class="type-signature"></span></h4>
 
     
 
@@ -4524,7 +10466,7 @@ is equal or lower than a given threshold
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2637">line 2637</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3773">line 3773</a>
     </li></ul></dd>
     
 
@@ -4532,6 +10474,11 @@ is equal or lower than a given threshold
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setCenter">Morph#setCenter</a>
+    </li></ul></dd>
     
 
     
@@ -4564,7 +10511,1699 @@ is equal or lower than a given threshold
 
 
 <div class="description">
-    Moves the rectangle
+    Moves this Morph in such a way the area occupied by it has
+its center on a given Point
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aPoint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The center Point</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setColor"><span class="type-signature"></span>setColor<span class="signature">(aColor)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3929">line 3929</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setColor">Morph#setColor</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the color
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Color.html">Color</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Color</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setExtent"><span class="type-signature"></span>setExtent<span class="signature">(silently<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3855">line 3855</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setExtent">Morph#setExtent</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the size
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>silently</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>false</code>
+                
+                </td>
+            
+
+            <td class="description last">Whether redraw this Morph</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setFullCenter"><span class="type-signature"></span>setFullCenter<span class="signature">(aPoint)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3786">line 3786</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setFullCenter">Morph#setFullCenter</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Moves this Morph in such a way the area occupied by it and all
+of its children has its center on a given Point
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aPoint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The center Point</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setHeight"><span class="type-signature"></span>setHeight<span class="signature">(height<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3908">line 3908</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setHeight">Morph#setHeight</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the height
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>0</code>
+                
+                </td>
+            
+
+            <td class="description last">The height</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setLeft"><span class="type-signature"></span>setLeft<span class="signature">(x)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3720">line 3720</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setLeft">Morph#setLeft</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the X coordinate of the left side
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">X coordinate</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setPosition"><span class="type-signature"></span>setPosition<span class="signature">(aPoint)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3698">line 3698</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setPosition">Morph#setPosition</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the position
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aPoint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Target position</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setRight"><span class="type-signature"></span>setRight<span class="signature">(x)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3733">line 3733</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setRight">Morph#setRight</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the Y coordinate of the right side
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">X coordinate</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setTop"><span class="type-signature"></span>setTop<span class="signature">(y)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3746">line 3746</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setTop">Morph#setTop</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the Y coordinate of the top side
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Y coordinate</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setWidth"><span class="type-signature"></span>setWidth<span class="signature">(width<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3887">line 3887</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setWidth">Morph#setWidth</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the width
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>0</code>
+                
+                </td>
+            
+
+            <td class="description last">The width</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="shadow"><span class="type-signature"></span>shadow<span class="signature">(off<span class="signature-attributes">opt</span>, a<span class="signature-attributes">opt</span>, color<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="ShadowMorph.html">ShadowMorph</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4203">line 4203</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#shadow">Morph#shadow</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Creates a shadow for this Morph using the global Morphic preferences
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>off</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Shadow offset</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>a</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>0.2</code>
+                
+                </td>
+            
+
+            <td class="description last">Shadow opacity</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Color.html">Color</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Shadow color</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="ShadowMorph.html">ShadowMorph</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="shadowImage"><span class="type-signature"></span>shadowImage<span class="signature">(off<span class="signature-attributes">opt</span>, color<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {HTMLCanvasElement}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4135">line 4135</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#shadowImage">Morph#shadowImage</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Creates a solid shadow for this Morph
 </div>
 
 
@@ -4604,13 +12243,13 @@ is equal or lower than a given threshold
 
         <tr>
             
-                <td class="name"><code>left</code></td>
+                <td class="name"><code>off</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><a href="Point.html">Point</a></span>
 
 
             
@@ -4630,20 +12269,20 @@ is equal or lower than a given threshold
 
             
 
-            <td class="description last">X coordinate of the left side</td>
+            <td class="description last">Shadow offset</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>top</code></td>
+                <td class="name"><code>color</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><a href="Color.html">Color</a></span>
 
 
             
@@ -4663,73 +12302,7 @@ is equal or lower than a given threshold
 
             
 
-            <td class="description last">Y coordinate of the top side</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>right</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">X coordinate of the right side</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>bottom</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Y coordinate of the bottom side</td>
+            <td class="description last">Shadow color</td>
         </tr>
 
     
@@ -4749,6 +12322,24 @@ is equal or lower than a given threshold
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLCanvasElement</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
         
@@ -4756,7 +12347,7 @@ is equal or lower than a given threshold
 
     
 
-    <h4 class="name" id="spread"><span class="type-signature"></span>spread<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
+    <h4 class="name" id="shadowImageBlurred"><span class="type-signature"></span>shadowImageBlurred<span class="signature">(off<span class="signature-attributes">opt</span>, color<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {HTMLCanvasElement}</span></h4>
 
     
 
@@ -4768,7 +12359,7 @@ is equal or lower than a given threshold
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2935">line 2935</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4166">line 4166</a>
     </li></ul></dd>
     
 
@@ -4776,6 +12367,11 @@ is equal or lower than a given threshold
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#shadowImageBlurred">Morph#shadowImageBlurred</a>
+    </li></ul></dd>
     
 
     
@@ -4808,8 +12404,297 @@ is equal or lower than a given threshold
 
 
 <div class="description">
-    Creates a new Rectangle by flooring the origin
-and ceiling the opposite corner
+    Creates a blurred shadow for this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>off</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Shadow offset</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Color.html">Color</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Shadow color</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLCanvasElement</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="show"><span class="type-signature"></span>show<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4069">line 4069</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#show">Morph#show</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Shows this Morph and all of its children
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="siblings"><span class="type-signature"></span>siblings<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;Nodes>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3227">line 3227</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Node.html#siblings">Node#siblings</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets all the children of this Node's parent, excluding itself
 </div>
 
 
@@ -4845,13 +12730,1116 @@ and ceiling the opposite corner
     </dt>
     <dd>
         
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
+<span class="param-type">Array.&lt;Nodes></span>
 
 
     </dd>
 </dl>
 
     
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="silentMoveBy"><span class="type-signature"></span>silentMoveBy<span class="signature">(delta)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3681">line 3681</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#silentMoveBy">Morph#silentMoveBy</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Moves this Morph without redraw it
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>delta</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+|
+
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Movement increment</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="silentSetExtent"><span class="type-signature"></span>silentSetExtent<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3872">line 3872</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#silentSetExtent">Morph#silentSetExtent</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the size without redraw this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="silentSetHeight"><span class="type-signature"></span>silentSetHeight<span class="signature">(height<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3916">line 3916</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#silentSetHeight">Morph#silentSetHeight</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the height without redraw the Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>0</code>
+                
+                </td>
+            
+
+            <td class="description last">The height</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="silentSetPosition"><span class="type-signature"></span>silentSetPosition<span class="signature">(aPoint)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3709">line 3709</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#silentSetPosition">Morph#silentSetPosition</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the position without redraw this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aPoint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Target position</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="silentSetWidth"><span class="type-signature"></span>silentSetWidth<span class="signature">(width<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3895">line 3895</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#silentSetWidth">Morph#silentSetWidth</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Sets the width without redraw the Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>0</code>
+                
+                </td>
+            
+
+            <td class="description last">The width</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="situation"><span class="type-signature"></span>situation<span class="signature">()</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4600">line 4600</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#situation">Morph#situation</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets information about the origin and position of this Morph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="step"><span class="type-signature"></span>step<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line6352">line 6352</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Morph.html#step">Morph#step</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Performs a step
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="tab"><span class="type-signature"></span>tab<span class="signature">(editField)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line5208">line 5208</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#tab">Morph#tab</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>editField</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="toggleVisibility"><span class="type-signature"></span>toggleVisibility<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4078">line 4078</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#toggleVisibility">Morph#toggleVisibility</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Toggles the visibility of this Morph and each of its children
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         
@@ -4871,7 +13859,7 @@ and ceiling the opposite corner
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2779">line 2779</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3484">line 3484</a>
     </li></ul></dd>
     
 
@@ -4879,6 +13867,11 @@ and ceiling the opposite corner
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#top">Morph#top</a>
+    </li></ul></dd>
     
 
     
@@ -4973,7 +13966,7 @@ and ceiling the opposite corner
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2787">line 2787</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3563">line 3563</a>
     </li></ul></dd>
     
 
@@ -4981,6 +13974,11 @@ and ceiling the opposite corner
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#topCenter">Morph#topCenter</a>
+    </li></ul></dd>
     
 
     
@@ -5013,7 +14011,7 @@ and ceiling the opposite corner
 
 
 <div class="description">
-    Creates a Point from the top center
+    Gets the top center
 </div>
 
 
@@ -5075,7 +14073,7 @@ and ceiling the opposite corner
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2795">line 2795</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3571">line 3571</a>
     </li></ul></dd>
     
 
@@ -5083,6 +14081,11 @@ and ceiling the opposite corner
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#topLeft">Morph#topLeft</a>
+    </li></ul></dd>
     
 
     
@@ -5115,7 +14118,7 @@ and ceiling the opposite corner
 
 
 <div class="description">
-    Gets the top left Point
+    Gets the top left
 </div>
 
 
@@ -5165,7 +14168,7 @@ and ceiling the opposite corner
 
     
 
-    <h4 class="name" id="topRight"><span class="type-signature"></span>topRight<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Point.html">Point</a>}</span></h4>
+    <h4 class="name" id="topMorphAt"><span class="type-signature"></span>topMorphAt<span class="signature">(point)</span><span class="type-signature"> &rarr; {<a href="Morph.html">Morph</a>}</span></h4>
 
     
 
@@ -5177,7 +14180,7 @@ and ceiling the opposite corner
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2803">line 2803</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4366">line 4366</a>
     </li></ul></dd>
     
 
@@ -5185,6 +14188,11 @@ and ceiling the opposite corner
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#topMorphAt">Morph#topMorphAt</a>
+    </li></ul></dd>
     
 
     
@@ -5217,7 +14225,319 @@ and ceiling the opposite corner
 
 
 <div class="description">
-    Creates a Point from the top right
+    Gets which visible child Morph (or self) has drawn over some point
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>point</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The point</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="topMorphSuchThat"><span class="type-signature"></span>topMorphSuchThat<span class="signature">(predicate)</span><span class="type-signature"> &rarr; {<a href="Morph.html">Morph</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4383">line 4383</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#topMorphSuchThat">Morph#topMorphSuchThat</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the top child Morph (or self) for which a predicate stands
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>predicate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The predicate function</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="topRight"><span class="type-signature"></span>topRight<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Point.html">Point</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3579">line 3579</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#topRight">Morph#topRight</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the top right
 </div>
 
 
@@ -5279,7 +14599,7 @@ and ceiling the opposite corner
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2570">line 2570</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3400">line 3400</a>
     </li></ul></dd>
     
 
@@ -5287,6 +14607,11 @@ and ceiling the opposite corner
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#toString">Morph#toString</a>
+    </li></ul></dd>
     
 
     
@@ -5332,7 +14657,7 @@ and ceiling the opposite corner
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>'[0@0 | 30@20]'</code></pre>
+    <pre class="prettyprint"><code>'a Morph 2 [20@45 | 130@250]'</code></pre>
 
 
 
@@ -5374,7 +14699,7 @@ and ceiling the opposite corner
 
     
 
-    <h4 class="name" id="translateBy"><span class="type-signature"></span>translateBy<span class="signature">(factor)</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
+    <h4 class="name" id="userMenu"><span class="type-signature"></span>userMenu<span class="signature">()</span><span class="type-signature"> &rarr; {MenuMorph}</span></h4>
 
     
 
@@ -5386,7 +14711,7 @@ and ceiling the opposite corner
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3039">line 3039</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line5092">line 5092</a>
     </li></ul></dd>
     
 
@@ -5394,6 +14719,11 @@ and ceiling the opposite corner
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#userMenu">Morph#userMenu</a>
+    </li></ul></dd>
     
 
     
@@ -5426,7 +14756,7 @@ and ceiling the opposite corner
 
 
 <div class="description">
-    Creates a Rectangle by translating this one
+    Gets the user menu
 </div>
 
 
@@ -5439,56 +14769,111 @@ and ceiling the opposite corner
 
 
 
-    <h5>Parameters:</h5>
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">MenuMorph</span>
+
+
+    </dd>
+</dl>
+
     
 
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
 
         
+            
 
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
     
 
-        <tr>
-            
-                <td class="name"><code>factor</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-|
-
-<span class="param-type"><a href="Point.html">Point</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Translation factor or Point</td>
-        </tr>
+    <h4 class="name" id="visibleBounds"><span class="type-signature"></span>visibleBounds<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Rectangle.html">Rectangle</a>}</span></h4>
 
     
-    </tbody>
-</table>
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3653">line 3653</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#visibleBounds">Morph#visibleBounds</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the bounding box which is not clipped by a FrameMorph
+</div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5540,7 +14925,7 @@ and ceiling the opposite corner
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line2811">line 2811</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3603">line 3603</a>
     </li></ul></dd>
     
 
@@ -5548,6 +14933,11 @@ and ceiling the opposite corner
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#width">Morph#width</a>
+    </li></ul></dd>
     
 
     
@@ -5617,6 +15007,113 @@ and ceiling the opposite corner
     <dd>
         
 <span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="world"><span class="type-signature"></span>world<span class="signature">()</span><span class="type-signature"> &rarr; {WorldMorph}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4326">line 4326</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#world">Morph#world</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Gets the WorldMorph this Morph belongs to
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">WorldMorph</span>
 
 
     </dd>
