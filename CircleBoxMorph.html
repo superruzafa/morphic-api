@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Morph - Documentation</title>
+    <title>CircleBoxMorph - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,7 +32,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Morph</h1>
+    <h1 class="page-title">CircleBoxMorph</h1>
     
 
     
@@ -45,7 +45,7 @@
 <header>
     
         <h2>
-        Morph
+        CircleBoxMorph
         </h2>
         
     
@@ -58,7 +58,7 @@
 
     
 
-    <h4 class="name" id="Morph"><span class="type-signature"></span>new Morph<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="CircleBoxMorph"><span class="type-signature"></span>new CircleBoxMorph<span class="signature">(orientation<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
@@ -70,7 +70,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3362">line 3362</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line7880">line 7880</a>
     </li></ul></dd>
     
 
@@ -107,11 +107,26 @@
 
 
 
-    <h5 class="subsection-title">Properties:</h5>
 
+
+<div class="description">
+    Creates a CircleBoxMorph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
 
-<table class="props">
+<table class="params">
     <thead>
     <tr>
         
@@ -121,7 +136,11 @@
         <th>Type</th>
 
         
+        <th>Attributes</th>
+        
 
+        
+        <th>Default</th>
         
 
         <th class="last">Description</th>
@@ -133,147 +152,7 @@
 
         <tr>
             
-                <td class="name"><code>isMorph</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>color</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Color.html">Color</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Background color</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>bounds</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Position and size</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>cachedFullBounds</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Rectangle.html">Rectangle</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Position and size of this Morph
-                      and all of its children</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>image</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">HTMLCanvasElement</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">This Morph's canvas for local drawing</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>cachedFullImage</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">HTMLCanvasElement</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">This Morph's canvas for of this Morph
-                              and all of its children</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>texture</code></td>
+                <td class="name"><code>orientation</code></td>
             
 
             <td class="type">
@@ -286,255 +165,23 @@
             </td>
 
             
-
-            
-
-            <td class="description last">URL of the texture used as background</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>cachedTexture</code></td>
-            
-
-            <td class="type">
-            
+                <td class="attributes">
                 
-<span class="param-type">HTMLImageElement</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Prerendered texture pattern</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>alpha</code></td>
-            
-
-            <td class="type">
-            
+                    &lt;optional><br>
                 
-<span class="param-type">number</span>
 
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Opacity, in the range [0, 1]</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isVisible</code></td>
-            
-
-            <td class="type">
-            
                 
-<span class="param-type">boolean</span>
 
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Whether this Morph is visible</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isDraggable</code></td>
-            
-
-            <td class="type">
-            
                 
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
+                </td>
             
 
             
-
-            <td class="description last">Whether this Morph can be dragged</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isTemplate</code></td>
-            
-
-            <td class="type">
-            
+                <td class="default">
                 
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Whether this Morph is used as template</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>acceptsDrops</code></td>
-            
-
-            <td class="type">
-            
+                    <code>'vertical'</code>
                 
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>noticesTransparentClick</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>fps</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>customContextMenu</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>lastTime</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>onNextStep</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
+                </td>
             
 
             <td class="description last"></td>
@@ -543,24 +190,6 @@
     
     </tbody>
 </table>
-
-
-
-
-
-
-<div class="description">
-    Creates a Morph
-</div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -587,7 +216,7 @@
 
 
     <ul>
-        <li><a href="Node.html">Node</a></li>
+        <li><a href="Morph.html">Morph</a></li>
     </ul>
 
 
@@ -625,6 +254,11 @@
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#step">Morph#step</a>
+    </li></ul></dd>
     
 
     
@@ -698,6 +332,11 @@
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#add">Morph#add</a>
+    </li></ul></dd>
     
 
     
@@ -831,6 +470,11 @@
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#addBack">Morph#addBack</a>
+    </li></ul></dd>
     
 
     
@@ -1241,6 +885,11 @@
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#addShadow">Morph#addShadow</a>
+    </li></ul></dd>
+    
 
     
 
@@ -1592,6 +1241,11 @@
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#allEntryFields">Morph#allEntryFields</a>
+    </li></ul></dd>
     
 
     
@@ -2045,6 +1699,90 @@ one descendant of this Node, including itself
 
     
 
+    <h4 class="name" id="autoOrientation"><span class="type-signature"></span>autoOrientation<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line7896">line 7896</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    Auto-orients this CircleBoxMorph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
     <h4 class="name" id="backTab"><span class="type-signature"></span>backTab<span class="signature">(editField)</span><span class="type-signature"></span></h4>
 
     
@@ -2065,6 +1803,11 @@ one descendant of this Node, including itself
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#backTab">Morph#backTab</a>
+    </li></ul></dd>
     
 
     
@@ -2195,6 +1938,11 @@ one descendant of this Node, including itself
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#bottom">Morph#bottom</a>
+    </li></ul></dd>
+    
 
     
 
@@ -2296,6 +2044,11 @@ one descendant of this Node, including itself
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#bottomCenter">Morph#bottomCenter</a>
+    </li></ul></dd>
     
 
     
@@ -2399,6 +2152,11 @@ one descendant of this Node, including itself
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#bottomLeft">Morph#bottomLeft</a>
+    </li></ul></dd>
+    
 
     
 
@@ -2500,6 +2258,11 @@ one descendant of this Node, including itself
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#bottomRight">Morph#bottomRight</a>
+    </li></ul></dd>
     
 
     
@@ -2603,6 +2366,11 @@ one descendant of this Node, including itself
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#boundingBox">Morph#boundingBox</a>
+    </li></ul></dd>
+    
 
     
 
@@ -2704,6 +2472,11 @@ one descendant of this Node, including itself
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#center">Morph#center</a>
+    </li></ul></dd>
     
 
     
@@ -2807,6 +2580,11 @@ one descendant of this Node, including itself
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#changed">Morph#changed</a>
+    </li></ul></dd>
+    
 
     
 
@@ -2890,6 +2668,11 @@ one descendant of this Node, including itself
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#childChanged">Morph#childChanged</a>
+    </li></ul></dd>
     
 
     
@@ -2975,6 +2758,11 @@ should be redrawn
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#contextMenu">Morph#contextMenu</a>
+    </li></ul></dd>
     
 
     
@@ -3078,6 +2866,11 @@ should be redrawn
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#copy">Morph#copy</a>
+    </li></ul></dd>
+    
 
     
 
@@ -3179,6 +2972,11 @@ should be redrawn
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#corners">Morph#corners</a>
+    </li></ul></dd>
     
 
     
@@ -3371,6 +3169,11 @@ should be redrawn
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#destroy">Morph#destroy</a>
+    </li></ul></dd>
+    
 
     
 
@@ -3446,7 +3249,7 @@ should be redrawn
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line4980">line 4980</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line7967">line 7967</a>
     </li></ul></dd>
     
 
@@ -3456,6 +3259,11 @@ should be redrawn
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Morph.html#developersMenu">Morph#developersMenu</a>
+    </li></ul></dd>
     
 
     
@@ -3486,7 +3294,7 @@ should be redrawn
 
 
 <div class="description">
-    Gets the developer menu
+    Builds the developer menu
 </div>
 
 
@@ -3556,6 +3364,11 @@ should be redrawn
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#drawCachedTexture">Morph#drawCachedTexture</a>
+    </li></ul></dd>
     
 
     
@@ -3632,7 +3445,7 @@ should be redrawn
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3943">line 3943</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line7905">line 7905</a>
     </li></ul></dd>
     
 
@@ -3642,6 +3455,11 @@ should be redrawn
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Morph.html#drawNew">Morph#drawNew</a>
+    </li></ul></dd>
     
 
     
@@ -3672,7 +3490,7 @@ should be redrawn
 
 
 <div class="description">
-    Draws this Morph
+    Draws a new CircleBoxMorph
 </div>
 
 
@@ -3724,6 +3542,11 @@ should be redrawn
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#drawOn">Morph#drawOn</a>
+    </li></ul></dd>
     
 
     
@@ -3901,6 +3724,11 @@ should be redrawn
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#drawTexture">Morph#drawTexture</a>
+    </li></ul></dd>
+    
 
     
 
@@ -4033,6 +3861,11 @@ should be redrawn
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#evaluateString">Morph#evaluateString</a>
+    </li></ul></dd>
     
 
     
@@ -4189,6 +4022,11 @@ should be redrawn
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#extent">Morph#extent</a>
+    </li></ul></dd>
+    
 
     
 
@@ -4290,6 +4128,11 @@ should be redrawn
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fadeTo">Morph#fadeTo</a>
+    </li></ul></dd>
     
 
     
@@ -4695,6 +4538,11 @@ into some opacity and then restores the original one
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullBounds">Morph#fullBounds</a>
+    </li></ul></dd>
+    
 
     
 
@@ -4797,6 +4645,11 @@ and all of its visible children
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullBoundsNoShadow">Morph#fullBoundsNoShadow</a>
+    </li></ul></dd>
     
 
     
@@ -4902,6 +4755,11 @@ excluding those which are shadows
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullChanged">Morph#fullChanged</a>
+    </li></ul></dd>
+    
 
     
 
@@ -4986,6 +4844,11 @@ and all of its children should be redrawn
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullCopy">Morph#fullCopy</a>
+    </li></ul></dd>
     
 
     
@@ -5088,6 +4951,11 @@ and all of its children should be redrawn
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullDrawOn">Morph#fullDrawOn</a>
+    </li></ul></dd>
     
 
     
@@ -5246,6 +5114,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullImage">Morph#fullImage</a>
+    </li></ul></dd>
+    
 
     
 
@@ -5348,6 +5221,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#fullImageClassic">Morph#fullImageClassic</a>
+    </li></ul></dd>
+    
 
     
 
@@ -5449,6 +5327,11 @@ in a canvas and optionally clips it
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#getPixelColor">Morph#getPixelColor</a>
+    </li></ul></dd>
     
 
     
@@ -5601,6 +5484,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#getShadow">Morph#getShadow</a>
+    </li></ul></dd>
+    
 
     
 
@@ -5702,6 +5590,11 @@ in a canvas and optionally clips it
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#glideTo">Morph#glideTo</a>
+    </li></ul></dd>
     
 
     
@@ -5968,6 +5861,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#height">Morph#height</a>
+    </li></ul></dd>
+    
 
     
 
@@ -6070,6 +5968,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#hide">Morph#hide</a>
+    </li></ul></dd>
+    
 
     
 
@@ -6153,6 +6056,11 @@ in a canvas and optionally clips it
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#hierarchyMenu">Morph#hierarchyMenu</a>
+    </li></ul></dd>
     
 
     
@@ -6255,6 +6163,11 @@ in a canvas and optionally clips it
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#hint">Morph#hint</a>
+    </li></ul></dd>
     
 
     
@@ -6389,6 +6302,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#inform">Morph#inform</a>
+    </li></ul></dd>
+    
 
     
 
@@ -6501,7 +6419,7 @@ in a canvas and optionally clips it
 
     
 
-    <h4 class="name" id="init"><span class="type-signature"></span>init<span class="signature">(noDraw<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="init"><span class="type-signature"></span>init<span class="signature">(orientation<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
@@ -6513,7 +6431,7 @@ in a canvas and optionally clips it
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line3372">line 3372</a>
+        <a href="morphic.js.html">morphic.js</a>, <a href="morphic.js.html#line7888">line 7888</a>
     </li></ul></dd>
     
 
@@ -6526,7 +6444,7 @@ in a canvas and optionally clips it
     
     <dt class="tag-overrides">Overrides:</dt>
     <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="Node.html#init">Node#init</a>
+        <a href="Morph.html#init">Morph#init</a>
     </li></ul></dd>
     
 
@@ -6558,7 +6476,7 @@ in a canvas and optionally clips it
 
 
 <div class="description">
-    Initializes this Morph
+    Initializes this CircleBoxMorph
 </div>
 
 
@@ -6600,13 +6518,13 @@ in a canvas and optionally clips it
 
         <tr>
             
-                <td class="name"><code>noDraw</code></td>
+                <td class="name"><code>orientation</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">boolean</span>
+<span class="param-type">String</span>
 
 
             
@@ -6627,12 +6545,12 @@ in a canvas and optionally clips it
             
                 <td class="default">
                 
-                    <code>false</code>
+                    <code>'vertical'</code>
                 
                 </td>
             
 
-            <td class="description last">Do not automatically draw this Morph</td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -6679,6 +6597,11 @@ in a canvas and optionally clips it
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#inspect">Morph#inspect</a>
+    </li></ul></dd>
     
 
     
@@ -6813,6 +6736,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#isPickedUp">Morph#isPickedUp</a>
+    </li></ul></dd>
+    
 
     
 
@@ -6914,6 +6842,11 @@ in a canvas and optionally clips it
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#isTouching">Morph#isTouching</a>
+    </li></ul></dd>
     
 
     
@@ -7066,6 +6999,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#isTransparentAt">Morph#isTransparentAt</a>
+    </li></ul></dd>
+    
 
     
 
@@ -7217,6 +7155,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#keepWithin">Morph#keepWithin</a>
+    </li></ul></dd>
+    
 
     
 
@@ -7350,6 +7293,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#left">Morph#left</a>
+    </li></ul></dd>
+    
 
     
 
@@ -7451,6 +7399,11 @@ in a canvas and optionally clips it
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#leftCenter">Morph#leftCenter</a>
+    </li></ul></dd>
     
 
     
@@ -7554,6 +7507,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#move">Morph#move</a>
+    </li></ul></dd>
+    
 
     
 
@@ -7637,6 +7595,11 @@ in a canvas and optionally clips it
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#moveBy">Morph#moveBy</a>
+    </li></ul></dd>
     
 
     
@@ -7774,6 +7737,11 @@ in a canvas and optionally clips it
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#moveCenter">Morph#moveCenter</a>
+    </li></ul></dd>
+    
 
     
 
@@ -7857,6 +7825,11 @@ in a canvas and optionally clips it
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#nextEntryField">Morph#nextEntryField</a>
+    </li></ul></dd>
     
 
     
@@ -8010,6 +7983,11 @@ editable, text-like child Morph, including itself
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#overlappedMorphs">Morph#overlappedMorphs</a>
+    </li></ul></dd>
+    
 
     
 
@@ -8111,6 +8089,11 @@ editable, text-like child Morph, including itself
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#overlappingImage">Morph#overlappingImage</a>
+    </li></ul></dd>
     
 
     
@@ -8577,6 +8560,11 @@ which is instance of at least one of a given list of constructors
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#penTrails">Morph#penTrails</a>
+    </li></ul></dd>
+    
 
     
 
@@ -8674,6 +8662,11 @@ which is instance of at least one of a given list of constructors
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#perish">Morph#perish</a>
+    </li></ul></dd>
     
 
     
@@ -8864,6 +8857,11 @@ which is instance of at least one of a given list of constructors
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#pickColor">Morph#pickColor</a>
+    </li></ul></dd>
     
 
     
@@ -9107,6 +9105,11 @@ which is instance of at least one of a given list of constructors
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#position">Morph#position</a>
+    </li></ul></dd>
+    
 
     
 
@@ -9208,6 +9211,11 @@ which is instance of at least one of a given list of constructors
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#previousEntryField">Morph#previousEntryField</a>
+    </li></ul></dd>
     
 
     
@@ -9360,6 +9368,11 @@ editable, text-like child Morph, including itself
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#prompt">Morph#prompt</a>
+    </li></ul></dd>
     
 
     
@@ -9873,6 +9886,11 @@ editable, text-like child Morph, including itself
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#removeShadow">Morph#removeShadow</a>
+    </li></ul></dd>
+    
 
     
 
@@ -9975,6 +9993,11 @@ editable, text-like child Morph, including itself
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#resize">Morph#resize</a>
+    </li></ul></dd>
+    
 
     
 
@@ -10058,6 +10081,11 @@ editable, text-like child Morph, including itself
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#right">Morph#right</a>
+    </li></ul></dd>
     
 
     
@@ -10160,6 +10188,11 @@ editable, text-like child Morph, including itself
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#rightCenter">Morph#rightCenter</a>
+    </li></ul></dd>
     
 
     
@@ -10370,6 +10403,11 @@ editable, text-like child Morph, including itself
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#scrollIntoView">Morph#scrollIntoView</a>
+    </li></ul></dd>
+    
 
     
 
@@ -10454,6 +10492,11 @@ to make sure this Morph is visible
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setBottom">Morph#setBottom</a>
+    </li></ul></dd>
     
 
     
@@ -10587,6 +10630,11 @@ to make sure this Morph is visible
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setCenter">Morph#setCenter</a>
+    </li></ul></dd>
     
 
     
@@ -10722,6 +10770,11 @@ its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setColor">Morph#setColor</a>
+    </li></ul></dd>
+    
 
     
 
@@ -10854,6 +10907,11 @@ its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setExtent">Morph#setExtent</a>
+    </li></ul></dd>
     
 
     
@@ -11043,6 +11101,11 @@ its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setFullCenter">Morph#setFullCenter</a>
+    </li></ul></dd>
+    
 
     
 
@@ -11176,6 +11239,11 @@ of its children has its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setHeight">Morph#setHeight</a>
+    </li></ul></dd>
     
 
     
@@ -11330,6 +11398,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setLeft">Morph#setLeft</a>
+    </li></ul></dd>
+    
 
     
 
@@ -11462,6 +11535,11 @@ of its children has its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setPosition">Morph#setPosition</a>
+    </li></ul></dd>
     
 
     
@@ -11596,6 +11674,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setRight">Morph#setRight</a>
+    </li></ul></dd>
+    
 
     
 
@@ -11729,6 +11812,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setTop">Morph#setTop</a>
+    </li></ul></dd>
+    
 
     
 
@@ -11861,6 +11949,11 @@ of its children has its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#setWidth">Morph#setWidth</a>
+    </li></ul></dd>
     
 
     
@@ -12014,6 +12107,11 @@ of its children has its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#shadow">Morph#shadow</a>
+    </li></ul></dd>
     
 
     
@@ -12260,6 +12358,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#shadowImage">Morph#shadowImage</a>
+    </li></ul></dd>
+    
 
     
 
@@ -12455,6 +12558,11 @@ of its children has its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#shadowImageBlurred">Morph#shadowImageBlurred</a>
+    </li></ul></dd>
     
 
     
@@ -12652,6 +12760,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#show">Morph#show</a>
+    </li></ul></dd>
+    
 
     
 
@@ -12843,6 +12956,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#silentMoveBy">Morph#silentMoveBy</a>
+    </li></ul></dd>
+    
 
     
 
@@ -12979,6 +13097,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#silentSetExtent">Morph#silentSetExtent</a>
+    </li></ul></dd>
+    
 
     
 
@@ -13062,6 +13185,11 @@ of its children has its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#silentSetHeight">Morph#silentSetHeight</a>
+    </li></ul></dd>
     
 
     
@@ -13216,6 +13344,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#silentSetPosition">Morph#silentSetPosition</a>
+    </li></ul></dd>
+    
 
     
 
@@ -13348,6 +13481,11 @@ of its children has its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#silentSetWidth">Morph#silentSetWidth</a>
+    </li></ul></dd>
     
 
     
@@ -13502,6 +13640,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#situation">Morph#situation</a>
+    </li></ul></dd>
+    
 
     
 
@@ -13603,6 +13746,11 @@ of its children has its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#tab">Morph#tab</a>
+    </li></ul></dd>
     
 
     
@@ -13733,6 +13881,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#toggleVisibility">Morph#toggleVisibility</a>
+    </li></ul></dd>
+    
 
     
 
@@ -13816,6 +13969,11 @@ of its children has its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#top">Morph#top</a>
+    </li></ul></dd>
     
 
     
@@ -13919,6 +14077,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#topCenter">Morph#topCenter</a>
+    </li></ul></dd>
+    
 
     
 
@@ -14021,6 +14184,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#topLeft">Morph#topLeft</a>
+    </li></ul></dd>
+    
 
     
 
@@ -14122,6 +14290,11 @@ of its children has its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#topMorphAt">Morph#topMorphAt</a>
+    </li></ul></dd>
     
 
     
@@ -14274,6 +14447,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#topMorphSuchThat">Morph#topMorphSuchThat</a>
+    </li></ul></dd>
+    
 
     
 
@@ -14425,6 +14603,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#topRight">Morph#topRight</a>
+    </li></ul></dd>
+    
 
     
 
@@ -14527,12 +14710,12 @@ of its children has its center on a given Point
     
 
     
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="Node.html#toString">Node#toString</a>
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#toString">Morph#toString</a>
     </li></ul></dd>
+    
+
     
 
     
@@ -14639,6 +14822,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#userMenu">Morph#userMenu</a>
+    </li></ul></dd>
+    
 
     
 
@@ -14740,6 +14928,11 @@ of its children has its center on a given Point
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#visibleBounds">Morph#visibleBounds</a>
+    </li></ul></dd>
     
 
     
@@ -14843,6 +15036,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#width">Morph#width</a>
+    </li></ul></dd>
+    
 
     
 
@@ -14945,6 +15143,11 @@ of its children has its center on a given Point
     
 
     
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Morph.html#world">Morph#world</a>
+    </li></ul></dd>
+    
 
     
 
@@ -15041,7 +15244,7 @@ of its children has its center on a given Point
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Feb 25 2018 23:51:46 GMT+0100 (CET) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Feb 25 2018 23:51:45 GMT+0100 (CET) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
