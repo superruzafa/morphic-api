@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: SpeechBubbleMorph</title>
+    <title>Class: WorldMorph</title>
     
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10095,7 +10095,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="SpeechBubbleMorph.html">Class: SpeechBubbleMorph</h1>
+        <h1 class="page-title" data-filename="WorldMorph.html">Class: WorldMorph</h1>
         
 
 
@@ -10104,7 +10104,7 @@
     
 <header>
     <div class="header content-size">
-        <h2>SpeechBubbleMorph
+        <h2>WorldMorph
         </h2>
         
     </div>
@@ -10118,12 +10118,12 @@
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="SpeechBubbleMorph">
-            <a class="share-icon" href="#SpeechBubbleMorph"><span class="glyphicon glyphicon-link"></span></a>
+        <h4 class="name" id="WorldMorph">
+            <a class="share-icon" href="#WorldMorph"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
-                new SpeechBubbleMorph
+                new WorldMorph
             </span>
-            <span class="signature">(<span class="optional">contents</span>, <span class="optional">color</span>, <span class="optional">edge</span>, <span class="optional">border</span>, <span class="optional">borderColor</span>, <span class="optional">padding</span>, <span class="optional">isThought</span>)</span>
+            <span class="signature">(aCanvas, fillPage)</span>
             
             
             
@@ -10156,8 +10156,6 @@
 		<th>Type</th>
 		
 		
-		<th>Default</th>
-		
 		
 		<th class="last">Description</th>
 	</tr>
@@ -10168,34 +10166,21 @@
 	
         <tr>
             
-                <td class="name"><code>contents</code></td>
+                <td class="name"><code>aCanvas</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">HTMLCanvasElement</span>
 
 
             
             </td>
             
             
-                <td class="default">
-                
-                    ''
-                
-                </td>
-            
             
             <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
                 
                 </td>
         </tr>
@@ -10204,183 +10189,7 @@
 	
         <tr>
             
-                <td class="name"><code>color</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Color.html">Color</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>edge</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    6
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>border</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    1
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>borderColor</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Color.html">Color</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>padding</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    0
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>isThought</code></td>
+                <td class="name"><code>fillPage</code></td>
             
             
             <td class="type">
@@ -10393,21 +10202,8 @@
             </td>
             
             
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
             
             <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
                 
                 </td>
         </tr>
@@ -10461,7 +10257,7 @@
         <h3 class="subsection-title">Extends</h3>
         
         <ul>
-            <li><a href="BoxMorph.html">BoxMorph</a></li>
+            <li><a href="FrameMorph.html">FrameMorph</a></li>
         </ul>
     
     
@@ -10479,6 +10275,74 @@
         <h3 class="subsection-title">Methods</h3>
         
         <dl class="list-methods">
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="about">
+            <a class="share-icon" href="#about"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                about
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
             
 <dt>
     <div class="nameContainer">
@@ -11144,6 +11008,76 @@
     </tbody>
 </table>
 
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="adjustBounds">
+            <a class="share-icon" href="#adjustBounds"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                adjustBounds
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="FrameMorph.html#adjustBounds">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
     
     
     
@@ -12373,6 +12307,148 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="brokenFor">
+            <a class="share-icon" href="#brokenFor"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                brokenFor
+            </span>
+            <span class="signature">(aMorph)</span><span class="type-signature">Array.&lt;<a href="Morph.html">Morph</a>></span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>aMorph</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Array.&lt;<a href="Morph.html">Morph</a>>
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="center">
             <a class="share-icon" href="#center"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -12711,6 +12787,74 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="condenseDamages">
+            <a class="share-icon" href="#condenseDamages"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                condenseDamages
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="contextMenu">
             <a class="share-icon" href="#contextMenu"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -12722,6 +12866,8 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#contextMenu">inherited</a></span>
             
+            
+                <span class="access-signature overrides"><a href="FrameMorph.html#contextMenu">overrides</a></span>
             
         </h4>
     
@@ -13420,6 +13566,74 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="doOneCycle">
+            <a class="share-icon" href="#doOneCycle"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                doOneCycle
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="drawCachedTexture">
             <a class="share-icon" href="#drawCachedTexture"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -13501,8 +13715,6 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#drawNew">inherited</a></span>
             
-            
-                <span class="access-signature overrides"><a href="BoxMorph.html#drawNew">overrides</a></span>
             
         </h4>
     
@@ -14115,6 +14327,8 @@
                 <span class="access-signature inherited"><a href="Morph.html#droppedImage">inherited</a></span>
             
             
+                <span class="access-signature overrides"><a href="FrameMorph.html#droppedImage">overrides</a></span>
+            
         </h4>
     
         
@@ -14252,6 +14466,8 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#droppedSVG">inherited</a></span>
             
+            
+                <span class="access-signature overrides"><a href="FrameMorph.html#droppedSVG">overrides</a></span>
             
         </h4>
     
@@ -14459,6 +14675,122 @@
             
                 
 <span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="edit">
+            <a class="share-icon" href="#edit"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                edit
+            </span>
+            <span class="signature">(aStringOrTextMorph)</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>aStringOrTextMorph</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="StringMorph.html">StringMorph</a></span>
+|
+
+<span class="param-type">EditMorph</span>
 
 
             
@@ -15111,10 +15443,10 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="fixLayout">
-            <a class="share-icon" href="#fixLayout"><span class="glyphicon glyphicon-link"></span></a>
+        <h4 class="name" id="fillPage">
+            <a class="share-icon" href="#fillPage"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
-                fixLayout
+                fillPage
             </span>
             <span class="signature">()</span>
             
@@ -15673,6 +16005,8 @@
                 <span class="access-signature inherited"><a href="Morph.html#fullDrawOn">inherited</a></span>
             
             
+                <span class="access-signature overrides"><a href="FrameMorph.html#fullDrawOn">overrides</a></span>
+            
         </h4>
     
         
@@ -15991,6 +16325,148 @@
             <td class="type">
             
                         HTMLCanvasElement
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="getGlobalPixelColor">
+            <a class="share-icon" href="#getGlobalPixelColor"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                getGlobalPixelColor
+            </span>
+            <span class="signature">(point)</span><span class="type-signature"><a href="Color.html">Color</a></span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>point</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Point.html">Point</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="Color.html">Color</a>
                         
                     
             </td>
@@ -16634,6 +17110,74 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="hideAll">
+            <a class="share-icon" href="#hideAll"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                hideAll
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="hierarchyMenu">
             <a class="share-icon" href="#hierarchyMenu"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -16998,12 +17542,12 @@
             <span class="">
                 init
             </span>
-            <span class="signature">(<span class="optional">contents</span>, <span class="optional">color</span>, <span class="optional">edge</span>, <span class="optional">border</span>, <span class="optional">borderColor</span>, <span class="optional">padding</span>, <span class="optional">isThought</span>)</span>
+            <span class="signature">(aCanvas, <span class="optional">fillPage</span>)</span>
             
             
             
             
-                <span class="access-signature overrides"><a href="BoxMorph.html#init">overrides</a></span>
+                <span class="access-signature overrides"><a href="FrameMorph.html#init">overrides</a></span>
             
         </h4>
     
@@ -17045,49 +17589,13 @@
 	
         <tr>
             
-                <td class="name"><code>contents</code></td>
+                <td class="name"><code>aCanvas</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    ''
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>color</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Color.html">Color</a></span>
+<span class="param-type">HTMLCanvasElement</span>
 
 
             
@@ -17102,8 +17610,6 @@
             <td class="description last">
                 
                     
-                        <span class="optional">optional</span>
-                    
                     
                         
                     
@@ -17115,149 +17621,7 @@
 	
         <tr>
             
-                <td class="name"><code>edge</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    6
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>border</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    1
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>borderColor</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Color.html">Color</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>padding</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    0
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>isThought</code></td>
+                <td class="name"><code>fillPage</code></td>
             
             
             <td class="type">
@@ -17272,7 +17636,7 @@
             
                 <td class="default">
                 
-                    false
+                    true
                 
                 </td>
             
@@ -17292,6 +17656,142 @@
 	
 	</tbody>
 </table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="initEventListeners">
+            <a class="share-icon" href="#initEventListeners"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                initEventListeners
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="initVirtualKeyboard">
+            <a class="share-icon" href="#initVirtualKeyboard"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                initVirtualKeyboard
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
     
     
     
@@ -18051,6 +18551,146 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="keepAllSubmorphsWithin">
+            <a class="share-icon" href="#keepAllSubmorphsWithin"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                keepAllSubmorphsWithin
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="FrameMorph.html#keepAllSubmorphsWithin">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="keepInScrollFrame">
+            <a class="share-icon" href="#keepInScrollFrame"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                keepInScrollFrame
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="FrameMorph.html#keepInScrollFrame">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="keepWithin">
             <a class="share-icon" href="#keepWithin"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -18376,6 +19016,8 @@
                 <span class="access-signature inherited"><a href="Morph.html#mouseClickLeft">inherited</a></span>
             
             
+                <span class="access-signature overrides"><a href="FrameMorph.html#mouseClickLeft">overrides</a></span>
+            
         </h4>
     
         
@@ -18490,6 +19132,8 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#mouseClickRight">inherited</a></span>
             
+            
+                <span class="access-signature overrides"><a href="FrameMorph.html#mouseClickRight">overrides</a></span>
             
         </h4>
     
@@ -18721,6 +19365,8 @@
                 <span class="access-signature inherited"><a href="Morph.html#mouseDownLeft">inherited</a></span>
             
             
+                <span class="access-signature overrides"><a href="FrameMorph.html#mouseDownLeft">overrides</a></span>
+            
         </h4>
     
         
@@ -18836,6 +19482,8 @@
                 <span class="access-signature inherited"><a href="Morph.html#mouseDownRight">inherited</a></span>
             
             
+                <span class="access-signature overrides"><a href="FrameMorph.html#mouseDownRight">overrides</a></span>
+            
         </h4>
     
         
@@ -18950,8 +19598,6 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#mouseEnter">inherited</a></span>
             
-            
-                <span class="access-signature overrides"><a href="BoxMorph.html#mouseEnter">overrides</a></span>
             
         </h4>
     
@@ -20183,6 +20829,8 @@
                 <span class="access-signature inherited"><a href="Morph.html#nextTab">inherited</a></span>
             
             
+                <span class="access-signature overrides"><a href="FrameMorph.html#nextTab">overrides</a></span>
+            
         </h4>
     
         
@@ -20376,169 +21024,6 @@
     </tbody>
 </table>
 
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="outlinePath">
-            <a class="share-icon" href="#outlinePath"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                outlinePath
-            </span>
-            <span class="signature">(context, radius, inset)</span>
-            
-            
-            
-                <span class="access-signature inherited"><a href="BoxMorph.html#outlinePath">inherited</a></span>
-            
-            
-                <span class="access-signature overrides"><a href="BoxMorph.html#outlinePath">overrides</a></span>
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>context</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">CanvasRenderingContext2D</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>radius</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>inset</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
     
     
     
@@ -21686,198 +22171,6 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="popUp">
-            <a class="share-icon" href="#popUp"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                popUp
-            </span>
-            <span class="signature">(world, pos, <span class="optional">isClickable</span>)</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		<th>Default</th>
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>world</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="WorldMorph.html">WorldMorph</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>pos</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Point.html">Point</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>isClickable</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
         <h4 class="name" id="position">
             <a class="share-icon" href="#position"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -22247,6 +22540,8 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#previousTab">inherited</a></span>
             
+            
+                <span class="access-signature overrides"><a href="FrameMorph.html#previousTab">overrides</a></span>
             
         </h4>
     
@@ -25795,8 +26090,6 @@
                 <span class="access-signature inherited"><a href="Morph.html#shadowImage">inherited</a></span>
             
             
-                <span class="access-signature overrides"><a href="BoxMorph.html#shadowImage">overrides</a></span>
-            
         </h4>
     
         
@@ -25978,8 +26271,6 @@
                 <span class="access-signature inherited"><a href="Morph.html#shadowImageBlurred">inherited</a></span>
             
             
-                <span class="access-signature overrides"><a href="BoxMorph.html#shadowImageBlurred">overrides</a></span>
-            
         </h4>
     
         
@@ -26159,6 +26450,74 @@
             
             
                 <span class="access-signature inherited"><a href="Morph.html#show">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="showAllHiddens">
+            <a class="share-icon" href="#showAllHiddens"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                showAllHiddens
+            </span>
+            <span class="signature">()</span>
+            
+            
             
             
         </h4>
@@ -26995,6 +27354,122 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="slide">
+            <a class="share-icon" href="#slide"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                slide
+            </span>
+            <span class="signature">(aStringOrTextMorph)</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>aStringOrTextMorph</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="StringMorph.html">StringMorph</a></span>
+|
+
+<span class="param-type">EditMorph</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="slideBackTo">
             <a class="share-icon" href="#slideBackTo"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -27275,6 +27750,74 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="stepAnimations">
+            <a class="share-icon" href="#stepAnimations"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                stepAnimations
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="stepFrame">
             <a class="share-icon" href="#stepFrame"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -27336,6 +27879,173 @@
     
     
     
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="stopEditing">
+            <a class="share-icon" href="#stopEditing"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                stopEditing
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="submorphBounds">
+            <a class="share-icon" href="#submorphBounds"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                submorphBounds
+            </span>
+            <span class="signature">()</span><span class="type-signature"><a href="Rectangle.html">Rectangle</a></span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="FrameMorph.html#submorphBounds">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="Rectangle.html">Rectangle</a>
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
     
     
     
@@ -27460,6 +28170,142 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="toggleBlurredShadows">
+            <a class="share-icon" href="#toggleBlurredShadows"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                toggleBlurredShadows
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="toggleDevMode">
+            <a class="share-icon" href="#toggleDevMode"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                toggleDevMode
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="toggleIsDraggable">
             <a class="share-icon" href="#toggleIsDraggable"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -27470,6 +28316,74 @@
             
             
                 <span class="access-signature inherited"><a href="Morph.html#toggleIsDraggable">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="togglePreferences">
+            <a class="share-icon" href="#togglePreferences"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                togglePreferences
+            </span>
+            <span class="signature">()</span>
+            
+            
             
             
         </h4>
@@ -28391,6 +29305,74 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="updateBroken">
+            <a class="share-icon" href="#updateBroken"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                updateBroken
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="updateReferences">
             <a class="share-icon" href="#updateReferences"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -28463,6 +29445,74 @@
 	
 	</tbody>
 </table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="userCreateMorph">
+            <a class="share-icon" href="#userCreateMorph"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                userCreateMorph
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
     
     
     
@@ -28715,6 +29765,8 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#wantsDropOf">inherited</a></span>
             
+            
+                <span class="access-signature overrides"><a href="FrameMorph.html#wantsDropOf">overrides</a></span>
             
         </h4>
     

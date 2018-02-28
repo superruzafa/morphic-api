@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: SpeechBubbleMorph</title>
+    <title>Class: TriggerMorph</title>
     
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10095,7 +10095,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="SpeechBubbleMorph.html">Class: SpeechBubbleMorph</h1>
+        <h1 class="page-title" data-filename="TriggerMorph.html">Class: TriggerMorph</h1>
         
 
 
@@ -10104,7 +10104,7 @@
     
 <header>
     <div class="header content-size">
-        <h2>SpeechBubbleMorph
+        <h2>TriggerMorph
         </h2>
         
     </div>
@@ -10118,12 +10118,12 @@
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="SpeechBubbleMorph">
-            <a class="share-icon" href="#SpeechBubbleMorph"><span class="glyphicon glyphicon-link"></span></a>
+        <h4 class="name" id="TriggerMorph">
+            <a class="share-icon" href="#TriggerMorph"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
-                new SpeechBubbleMorph
+                new TriggerMorph
             </span>
-            <span class="signature">(<span class="optional">contents</span>, <span class="optional">color</span>, <span class="optional">edge</span>, <span class="optional">border</span>, <span class="optional">borderColor</span>, <span class="optional">padding</span>, <span class="optional">isThought</span>)</span>
+            <span class="signature">(<span class="optional">target</span>, <span class="optional">action</span>, <span class="optional">labelString</span>, <span class="optional">fontSize</span>, <span class="optional">fontStyle</span>, <span class="optional">environment</span>, <span class="optional">hint</span>, <span class="optional">labelColor</span>, <span class="optional">labelBold</span>, <span class="optional">labelItalic</span>, <span class="optional">doubleClickAction</span>)</span>
             
             
             
@@ -10168,7 +10168,161 @@
 	
         <tr>
             
-                <td class="name"><code>contents</code></td>
+                <td class="name"><code>target</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>action</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>labelString</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+|
+
+<span class="param-type">HTMLCanvasElement</span>
+|
+
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fontSize</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fontStyle</code></td>
             
             
             <td class="type">
@@ -10183,7 +10337,7 @@
             
                 <td class="default">
                 
-                    ''
+                    'sans-serif'
                 
                 </td>
             
@@ -10204,7 +10358,78 @@
 	
         <tr>
             
-                <td class="name"><code>color</code></td>
+                <td class="name"><code>environment</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>hint</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>labelColor</code></td>
             
             
             <td class="type">
@@ -10238,149 +10463,7 @@
 	
         <tr>
             
-                <td class="name"><code>edge</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    6
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>border</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    1
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>borderColor</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Color.html">Color</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>padding</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    0
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>isThought</code></td>
+                <td class="name"><code>labelBold</code></td>
             
             
             <td class="type">
@@ -10396,6 +10479,76 @@
                 <td class="default">
                 
                     false
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>labelItalic</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>doubleClickAction</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
                 
                 </td>
             
@@ -10461,7 +10614,7 @@
         <h3 class="subsection-title">Extends</h3>
         
         <ul>
-            <li><a href="BoxMorph.html">BoxMorph</a></li>
+            <li><a href="Morph.html">Morph</a></li>
         </ul>
     
     
@@ -12373,6 +12526,119 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="bubbleHelp">
+            <a class="share-icon" href="#bubbleHelp"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                bubbleHelp
+            </span>
+            <span class="signature">(contents)</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>contents</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="center">
             <a class="share-icon" href="#center"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -13152,6 +13418,142 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="createBackgrounds">
+            <a class="share-icon" href="#createBackgrounds"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                createBackgrounds
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="createLabel">
+            <a class="share-icon" href="#createLabel"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                createLabel
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="depth">
             <a class="share-icon" href="#depth"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -13502,7 +13904,7 @@
                 <span class="access-signature inherited"><a href="Morph.html#drawNew">inherited</a></span>
             
             
-                <span class="access-signature overrides"><a href="BoxMorph.html#drawNew">overrides</a></span>
+                <span class="access-signature overrides"><a href="Morph.html#drawNew">overrides</a></span>
             
         </h4>
     
@@ -15068,74 +15470,6 @@
 	
 	</tbody>
 </table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="fixLayout">
-            <a class="share-icon" href="#fixLayout"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                fixLayout
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
     
     
     
@@ -16745,6 +17079,8 @@
                 <span class="access-signature inherited"><a href="Morph.html#hint">inherited</a></span>
             
             
+                <span class="access-signature overrides"><a href="Morph.html#hint">overrides</a></span>
+            
         </h4>
     
         
@@ -16998,12 +17334,12 @@
             <span class="">
                 init
             </span>
-            <span class="signature">(<span class="optional">contents</span>, <span class="optional">color</span>, <span class="optional">edge</span>, <span class="optional">border</span>, <span class="optional">borderColor</span>, <span class="optional">padding</span>, <span class="optional">isThought</span>)</span>
+            <span class="signature">(<span class="optional">target</span>, <span class="optional">action</span>, <span class="optional">labelString</span>, <span class="optional">fontSize</span>, <span class="optional">fontStyle</span>, <span class="optional">environment</span>, <span class="optional">hint</span>, <span class="optional">labelColor</span>, <span class="optional">labelBold</span>, <span class="optional">labelItalic</span>, <span class="optional">doubleClickAction</span>)</span>
             
             
             
             
-                <span class="access-signature overrides"><a href="BoxMorph.html#init">overrides</a></span>
+                <span class="access-signature overrides"><a href="Morph.html#init">overrides</a></span>
             
         </h4>
     
@@ -17045,7 +17381,161 @@
 	
         <tr>
             
-                <td class="name"><code>contents</code></td>
+                <td class="name"><code>target</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>action</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>labelString</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type"><a href="Morph.html">Morph</a></span>
+|
+
+<span class="param-type">HTMLCanvasElement</span>
+|
+
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fontSize</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fontStyle</code></td>
             
             
             <td class="type">
@@ -17060,7 +17550,7 @@
             
                 <td class="default">
                 
-                    ''
+                    'sans-serif'
                 
                 </td>
             
@@ -17081,7 +17571,78 @@
 	
         <tr>
             
-                <td class="name"><code>color</code></td>
+                <td class="name"><code>environment</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>hint</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>labelColor</code></td>
             
             
             <td class="type">
@@ -17115,149 +17676,7 @@
 	
         <tr>
             
-                <td class="name"><code>edge</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    6
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>border</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    1
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>borderColor</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Color.html">Color</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>padding</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    0
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>isThought</code></td>
+                <td class="name"><code>labelBold</code></td>
             
             
             <td class="type">
@@ -17273,6 +17692,76 @@
                 <td class="default">
                 
                     false
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>labelItalic</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>doubleClickAction</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
                 
                 </td>
             
@@ -18376,6 +18865,8 @@
                 <span class="access-signature inherited"><a href="Morph.html#mouseClickLeft">inherited</a></span>
             
             
+                <span class="access-signature overrides"><a href="Morph.html#mouseClickLeft">overrides</a></span>
+            
         </h4>
     
         
@@ -18606,6 +19097,8 @@
                 <span class="access-signature inherited"><a href="Morph.html#mouseDoubleClick">inherited</a></span>
             
             
+                <span class="access-signature overrides"><a href="Morph.html#mouseDoubleClick">overrides</a></span>
+            
         </h4>
     
         
@@ -18720,6 +19213,8 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#mouseDownLeft">inherited</a></span>
             
+            
+                <span class="access-signature overrides"><a href="Morph.html#mouseDownLeft">overrides</a></span>
             
         </h4>
     
@@ -18951,7 +19446,7 @@
                 <span class="access-signature inherited"><a href="Morph.html#mouseEnter">inherited</a></span>
             
             
-                <span class="access-signature overrides"><a href="BoxMorph.html#mouseEnter">overrides</a></span>
+                <span class="access-signature overrides"><a href="Morph.html#mouseEnter">overrides</a></span>
             
         </h4>
     
@@ -19182,6 +19677,8 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#mouseLeave">inherited</a></span>
             
+            
+                <span class="access-signature overrides"><a href="Morph.html#mouseLeave">overrides</a></span>
             
         </h4>
     
@@ -20385,169 +20882,6 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="outlinePath">
-            <a class="share-icon" href="#outlinePath"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                outlinePath
-            </span>
-            <span class="signature">(context, radius, inset)</span>
-            
-            
-            
-                <span class="access-signature inherited"><a href="BoxMorph.html#outlinePath">inherited</a></span>
-            
-            
-                <span class="access-signature overrides"><a href="BoxMorph.html#outlinePath">overrides</a></span>
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>context</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">CanvasRenderingContext2D</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>radius</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>inset</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
         <h4 class="name" id="overlappedMorphs">
             <a class="share-icon" href="#overlappedMorphs"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -21686,12 +22020,12 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="popUp">
-            <a class="share-icon" href="#popUp"><span class="glyphicon glyphicon-link"></span></a>
+        <h4 class="name" id="popUpbubbleHelp">
+            <a class="share-icon" href="#popUpbubbleHelp"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
-                popUp
+                popUpbubbleHelp
             </span>
-            <span class="signature">(world, pos, <span class="optional">isClickable</span>)</span>
+            <span class="signature">(contents)</span>
             
             
             
@@ -21724,8 +22058,6 @@
 		<th>Type</th>
 		
 		
-		<th>Default</th>
-		
 		
 		<th class="last">Description</th>
 	</tr>
@@ -21736,98 +22068,21 @@
 	
         <tr>
             
-                <td class="name"><code>world</code></td>
+                <td class="name"><code>contents</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type"><a href="WorldMorph.html">WorldMorph</a></span>
+<span class="param-type">String</span>
 
 
             
             </td>
             
             
-                <td class="default">
-                
-                </td>
-            
             
             <td class="description last">
-                
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>pos</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Point.html">Point</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>isClickable</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
                 
                 </td>
         </tr>
@@ -23889,6 +24144,8 @@
                 <span class="access-signature inherited"><a href="Morph.html#rootForGrab">inherited</a></span>
             
             
+                <span class="access-signature overrides"><a href="Morph.html#rootForGrab">overrides</a></span>
+            
         </h4>
     
         
@@ -25795,8 +26052,6 @@
                 <span class="access-signature inherited"><a href="Morph.html#shadowImage">inherited</a></span>
             
             
-                <span class="access-signature overrides"><a href="BoxMorph.html#shadowImage">overrides</a></span>
-            
         </h4>
     
         
@@ -25977,8 +26232,6 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#shadowImageBlurred">inherited</a></span>
             
-            
-                <span class="access-signature overrides"><a href="BoxMorph.html#shadowImageBlurred">overrides</a></span>
             
         </h4>
     
@@ -28384,6 +28637,142 @@
     <pre class="prettyprint"><code>'a Morph 10 [0@0 | 50@40]'</code></pre>
     
 
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="trigger">
+            <a class="share-icon" href="#trigger"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                trigger
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="triggerDoubleClick">
+            <a class="share-icon" href="#triggerDoubleClick"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                triggerDoubleClick
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
     
 </dd>
 
