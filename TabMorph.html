@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: TextMorph</title>
+    <title>Class: TabMorph</title>
     
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13993,7 +13993,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="TextMorph.html">Class: TextMorph</h1>
+        <h1 class="page-title" data-filename="TabMorph.html">Class: TabMorph</h1>
         
 
 
@@ -14002,7 +14002,7 @@
     
 <header>
     <div class="header content-size">
-        <h2>TextMorph
+        <h2>TabMorph
         </h2>
         
     </div>
@@ -14016,12 +14016,12 @@
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="TextMorph">
-            <a class="share-icon" href="#TextMorph"><span class="glyphicon glyphicon-link"></span></a>
+        <h4 class="name" id="TabMorph">
+            <a class="share-icon" href="#TabMorph"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
-                new TextMorph
+                new TabMorph
             </span>
-            <span class="signature">(<span class="optional">text</span>, <span class="optional">fontSize</span>, <span class="optional">fontStyle</span>, <span class="optional">bold</span>, <span class="optional">italic</span>, <span class="optional">alignment</span>, <span class="optional">width</span>, <span class="optional">fontName</span>, <span class="optional">shadowOffset</span>, <span class="optional">shadowColor</span>)</span>
+            <span class="signature">(colors, target, <span class="optional">action</span>, <span class="optional">labelString</span>, <span class="optional">query</span>, <span class="optional">environment</span>, <span class="optional">hint</span>)</span>
             
             
             
@@ -14054,8 +14054,6 @@
 		<th>Type</th>
 		
 		
-		<th>Default</th>
-		
 		
 		<th class="last">Description</th>
 	</tr>
@@ -14066,7 +14064,102 @@
 	
         <tr>
             
-                <td class="name"><code>text</code></td>
+                <td class="name"><code>colors</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="Color.html">Color</a>></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>action</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>labelString</code></td>
             
             
             <td class="type">
@@ -14079,12 +14172,6 @@
             </td>
             
             
-                <td class="default">
-                
-                    'TextMorph'
-                
-                </td>
-            
             
             <td class="description last">
                 
@@ -14102,25 +14189,22 @@
 	
         <tr>
             
-                <td class="name"><code>fontSize</code></td>
+                <td class="name"><code>query</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">function</span>
+|
+
+<span class="param-type">String</span>
 
 
             
             </td>
             
             
-                <td class="default">
-                
-                    12
-                
-                </td>
-            
             
             <td class="description last">
                 
@@ -14138,7 +14222,7 @@
 	
         <tr>
             
-                <td class="name"><code>fontStyle</code></td>
+                <td class="name"><code>environment</code></td>
             
             
             <td class="type">
@@ -14151,12 +14235,6 @@
             </td>
             
             
-                <td class="default">
-                
-                    'sans-serif'
-                
-                </td>
-            
             
             <td class="description last">
                 
@@ -14174,234 +14252,21 @@
 	
         <tr>
             
-                <td class="name"><code>bold</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>italic</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>alignment</code></td>
+                <td class="name"><code>hint</code></td>
             
             
             <td class="type">
             
                 
 <span class="param-type">String</span>
+|
+
+<span class="param-type">function</span>
 
 
             
             </td>
             
-            
-                <td class="default">
-                
-                    'left'
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>width</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    0
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>fontName</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>shadowOffset</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Point.html">Point</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>shadowColor</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Color.html">Color</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
             
             
             <td class="description last">
@@ -14465,7 +14330,7 @@
         <h3 class="subsection-title">Extends</h3>
         
         <ul>
-            <li><a href="Morph.html">Morph</a></li>
+            <li><a href="ToggleButtonMorph.html">ToggleButtonMorph</a></li>
         </ul>
     
     
@@ -16377,6 +16242,121 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="bubbleHelp">
+            <a class="share-icon" href="#bubbleHelp"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                bubbleHelp
+            </span>
+            <span class="signature">(contents)</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="TriggerMorph.html#bubbleHelp">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>contents</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="center">
             <a class="share-icon" href="#center"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -16616,74 +16596,6 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="clearSelection">
-            <a class="share-icon" href="#clearSelection"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                clearSelection
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
         <h4 class="name" id="colorSetters">
             <a class="share-icon" href="#colorSetters"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -16765,148 +16677,6 @@
             <td class="type">
             
                         Array.&lt;String>
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="columnRow">
-            <a class="share-icon" href="#columnRow"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                columnRow
-            </span>
-            <span class="signature">(slot)</span><span class="type-signature"><a href="Point.html">Point</a></span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>slot</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        <a href="Point.html">Point</a>
                         
                     
             </td>
@@ -17366,14 +17136,86 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="deleteSelection">
-            <a class="share-icon" href="#deleteSelection"><span class="glyphicon glyphicon-link"></span></a>
+        <h4 class="name" id="createBackgrounds">
+            <a class="share-icon" href="#createBackgrounds"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
-                deleteSelection
+                createBackgrounds
             </span>
             <span class="signature">()</span>
             
             
+            
+                <span class="access-signature inherited"><a href="PushButtonMorph.html#createBackgrounds">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="createLabel">
+            <a class="share-icon" href="#createLabel"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                createLabel
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="PushButtonMorph.html#createLabel">inherited</a></span>
             
             
         </h4>
@@ -17615,8 +17457,6 @@
                 <span class="access-signature inherited"><a href="Morph.html#developersMenu">inherited</a></span>
             
             
-                <span class="access-signature overrides"><a href="Morph.html#developersMenu">overrides</a></span>
-            
         </h4>
     
         
@@ -17704,14 +17544,16 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="disableSelecting">
-            <a class="share-icon" href="#disableSelecting"><span class="glyphicon glyphicon-link"></span></a>
+        <h4 class="name" id="disable">
+            <a class="share-icon" href="#disable"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
-                disableSelecting
+                disable
             </span>
             <span class="signature">()</span>
             
             
+            
+                <span class="access-signature inherited"><a href="PushButtonMorph.html#disable">inherited</a></span>
             
             
         </h4>
@@ -17772,83 +17614,19 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="doIt">
-            <a class="share-icon" href="#doIt"><span class="glyphicon glyphicon-link"></span></a>
+        <h4 class="name" id="drawBackground">
+            <a class="share-icon" href="#drawBackground"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
-                doIt
+                drawBackground
             </span>
-            <span class="signature">()</span>
+            <span class="signature">(context, color)</span>
             
             
             
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="downFrom">
-            <a class="share-icon" href="#downFrom"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                downFrom
-            </span>
-            <span class="signature">(slot)</span><span class="type-signature">number</span>
+                <span class="access-signature inherited"><a href="PushButtonMorph.html#drawBackground">inherited</a></span>
             
             
-            
+                <span class="access-signature overrides"><a href="ToggleButtonMorph.html#drawBackground">overrides</a></span>
             
         </h4>
     
@@ -17888,13 +17666,36 @@
 	
         <tr>
             
-                <td class="name"><code>slot</code></td>
+                <td class="name"><code>context</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">CanvasRenderingContext2D</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Color.html">Color</a></span>
 
 
             
@@ -17944,35 +17745,6 @@
     
     
     
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
     
     
     
@@ -18052,6 +17824,78 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="drawEdges">
+            <a class="share-icon" href="#drawEdges"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                drawEdges
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="PushButtonMorph.html#drawEdges">inherited</a></span>
+            
+            
+                <span class="access-signature overrides"><a href="ToggleButtonMorph.html#drawEdges">overrides</a></span>
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="drawNew">
             <a class="share-icon" href="#drawNew"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -18063,8 +17907,6 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#drawNew">inherited</a></span>
             
-            
-                <span class="access-signature overrides"><a href="Morph.html#drawNew">overrides</a></span>
             
         </h4>
     
@@ -18224,6 +18066,123 @@
                     
                         
                     
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="drawOutline">
+            <a class="share-icon" href="#drawOutline"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                drawOutline
+            </span>
+            <span class="signature">(context)</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="PushButtonMorph.html#drawOutline">inherited</a></span>
+            
+            
+                <span class="access-signature overrides"><a href="ToggleButtonMorph.html#drawOutline">overrides</a></span>
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">CanvasRenderingContext2D</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
                 
                 </td>
         </tr>
@@ -19079,82 +19038,16 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="edit">
-            <a class="share-icon" href="#edit"><span class="glyphicon glyphicon-link"></span></a>
+        <h4 class="name" id="enable">
+            <a class="share-icon" href="#enable"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
-                edit
+                enable
             </span>
             <span class="signature">()</span>
             
             
             
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="enableSelecting">
-            <a class="share-icon" href="#enableSelecting"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                enableSelecting
-            </span>
-            <span class="signature">()</span>
-            
-            
+                <span class="access-signature inherited"><a href="PushButtonMorph.html#enable">inherited</a></span>
             
             
         </h4>
@@ -19206,148 +19099,6 @@
     
     
     
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="endOfLine">
-            <a class="share-icon" href="#endOfLine"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                endOfLine
-            </span>
-            <span class="signature">(slot)</span><span class="type-signature">number</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>slot</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
     
     
     
@@ -19621,103 +19372,6 @@
             <td class="type">
             
                         *
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="evaluationMenu">
-            <a class="share-icon" href="#evaluationMenu"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                evaluationMenu
-            </span>
-            <span class="signature">()</span><span class="type-signature"><a href="MenuMorph.html">MenuMorph</a></span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        <a href="MenuMorph.html">MenuMorph</a>
                         
                     
             </td>
@@ -20048,15 +19702,17 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="font">
-            <a class="share-icon" href="#font"><span class="glyphicon glyphicon-link"></span></a>
+        <h4 class="name" id="fixLayout">
+            <a class="share-icon" href="#fixLayout"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
-                font
+                fixLayout
             </span>
-            <span class="signature">()</span><span class="type-signature">String</span>
+            <span class="signature">()</span>
             
             
             
+            
+                <span class="access-signature overrides"><a href="ToggleButtonMorph.html#fixLayout">overrides</a></span>
             
         </h4>
     
@@ -20107,35 +19763,6 @@
     
     
     
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        String
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
     
     
     
@@ -21964,12 +21591,12 @@
             <span class="">
                 init
             </span>
-            <span class="signature">(<span class="optional">text</span>, <span class="optional">fontSize</span>, <span class="optional">fontStyle</span>, <span class="optional">bold</span>, <span class="optional">italic</span>, <span class="optional">alignment</span>, <span class="optional">width</span>, <span class="optional">fontName</span>, <span class="optional">shadowOffset</span>, <span class="optional">shadowColor</span>)</span>
+            <span class="signature">(colors, target, <span class="optional">action</span>, <span class="optional">labelString</span>, <span class="optional">query</span>, <span class="optional">environment</span>, <span class="optional">hint</span>, <span class="optional">template</span>, <span class="optional">minWidth</span>, <span class="optional">hasPreview</span>, <span class="optional">isPicture</span>)</span>
             
             
             
+                <span class="access-signature inherited"><a href="ToggleButtonMorph.html#init">inherited</a></span>
             
-                <span class="access-signature overrides"><a href="Morph.html#init">overrides</a></span>
             
         </h4>
     
@@ -22011,12 +21638,50 @@
 	
         <tr>
             
-                <td class="name"><code>text</code></td>
+                <td class="name"><code>colors</code></td>
             
             
             <td class="type">
             
                 
+<span class="param-type">Array.&lt;<a href="Color.html">Color</a>></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type">Object</span>
+|
+
 <span class="param-type">String</span>
 
 
@@ -22026,7 +21691,40 @@
             
                 <td class="default">
                 
-                    'TextMorph'
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>action</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
                 
                 </td>
             
@@ -22047,7 +21745,183 @@
 	
         <tr>
             
-                <td class="name"><code>fontSize</code></td>
+                <td class="name"><code>labelString</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>query</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>environment</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>hint</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>template</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">?</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>minWidth</code></td>
             
             
             <td class="type">
@@ -22062,8 +21936,6 @@
             
                 <td class="default">
                 
-                    12
-                
                 </td>
             
             
@@ -22083,43 +21955,7 @@
 	
         <tr>
             
-                <td class="name"><code>fontStyle</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    'sans-serif'
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>bold</code></td>
+                <td class="name"><code>hasPreview</code></td>
             
             
             <td class="type">
@@ -22155,7 +21991,7 @@
 	
         <tr>
             
-                <td class="name"><code>italic</code></td>
+                <td class="name"><code>isPicture</code></td>
             
             
             <td class="type">
@@ -22171,180 +22007,6 @@
                 <td class="default">
                 
                     false
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>alignment</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    'left'
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>width</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                    0
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>fontName</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>shadowOffset</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Point.html">Point</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
-                
-                </td>
-            
-            
-            <td class="description last">
-                
-                    
-                        <span class="optional">optional</span>
-                    
-                    
-                        
-                    
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>shadowColor</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Color.html">Color</a></span>
-
-
-            
-            </td>
-            
-            
-                <td class="default">
                 
                 </td>
             
@@ -22479,74 +22141,6 @@
 	
 	</tbody>
 </table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="inspectIt">
-            <a class="share-icon" href="#inspectIt"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                inspectIt
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
     
     
     
@@ -23513,8 +23107,8 @@
             
             
             
+                <span class="access-signature inherited"><a href="Morph.html#mouseClickLeft">inherited</a></span>
             
-                <span class="access-signature overrides"><a href="Morph.html#mouseClickLeft">overrides</a></span>
             
         </h4>
     
@@ -23743,8 +23337,8 @@
             
             
             
+                <span class="access-signature inherited"><a href="Morph.html#mouseDoubleClick">inherited</a></span>
             
-                <span class="access-signature overrides"><a href="Morph.html#mouseDoubleClick">overrides</a></span>
             
         </h4>
     
@@ -23860,8 +23454,6 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#mouseDownLeft">inherited</a></span>
             
-            
-                <span class="access-signature overrides"><a href="Morph.html#mouseDownLeft">overrides</a></span>
             
         </h4>
     
@@ -25426,148 +25018,6 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="nextWordFrom">
-            <a class="share-icon" href="#nextWordFrom"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                nextWordFrom
-            </span>
-            <span class="signature">(slot)</span><span class="type-signature">number</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>slot</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
         <h4 class="name" id="numericalSetters">
             <a class="share-icon" href="#numericalSetters"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -25579,8 +25029,6 @@
             
                 <span class="access-signature inherited"><a href="Morph.html#numericalSetters">inherited</a></span>
             
-            
-                <span class="access-signature overrides"><a href="Morph.html#numericalSetters">overrides</a></span>
             
         </h4>
     
@@ -25660,6 +25108,167 @@
     </tbody>
 </table>
 
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="outlinePath">
+            <a class="share-icon" href="#outlinePath"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                outlinePath
+            </span>
+            <span class="signature">(context, radius, inset)</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="PushButtonMorph.html#outlinePath">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">CanvasRenderingContext2D</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>radius</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>inset</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
     
     
     
@@ -26191,74 +25800,6 @@
     </tbody>
 </table>
 
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="parse">
-            <a class="share-icon" href="#parse"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                parse
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
     
     
     
@@ -26875,6 +26416,121 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="popUpbubbleHelp">
+            <a class="share-icon" href="#popUpbubbleHelp"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                popUpbubbleHelp
+            </span>
+            <span class="signature">(contents)</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="TriggerMorph.html#popUpbubbleHelp">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>contents</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="position">
             <a class="share-icon" href="#position"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -27031,6 +26687,167 @@
             
                 
 <span class="param-type"><a href="HandMorph.html">HandMorph</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="previewPath">
+            <a class="share-icon" href="#previewPath"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                previewPath
+            </span>
+            <span class="signature">(context, radius, inset)</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="ToggleButtonMorph.html#previewPath">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">CanvasRenderingContext2D</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>radius</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>inset</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
 
 
             
@@ -27339,148 +27156,6 @@
     
     
     
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="previousWordFrom">
-            <a class="share-icon" href="#previousWordFrom"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                previousWordFrom
-            </span>
-            <span class="signature">(slot)</span><span class="type-signature">number</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>slot</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
     
     
     
@@ -28762,6 +28437,76 @@
             
 <dt>
     <div class="nameContainer">
+        <h4 class="name" id="refresh">
+            <a class="share-icon" href="#refresh"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                refresh
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+                <span class="access-signature overrides"><a href="ToggleButtonMorph.html#refresh">overrides</a></span>
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
         <h4 class="name" id="removeChild">
             <a class="share-icon" href="#removeChild"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -29483,255 +29228,6 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="selectAll">
-            <a class="share-icon" href="#selectAll"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                selectAll
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="selectAllAndEdit">
-            <a class="share-icon" href="#selectAllAndEdit"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                selectAllAndEdit
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="selectBetweenWordsAt">
-            <a class="share-icon" href="#selectBetweenWordsAt"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                selectBetweenWordsAt
-            </span>
-            <span class="signature">(slot)</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>slot</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
         <h4 class="name" id="selectForEdit">
             <a class="share-icon" href="#selectForEdit"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -29822,517 +29318,6 @@
     </tbody>
 </table>
 
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="selection">
-            <a class="share-icon" href="#selection"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                selection
-            </span>
-            <span class="signature">()</span><span class="type-signature">String</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        String
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="selectionStartSlot">
-            <a class="share-icon" href="#selectionStartSlot"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                selectionStartSlot
-            </span>
-            <span class="signature">()</span><span class="type-signature">number</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="selectWordAt">
-            <a class="share-icon" href="#selectWordAt"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                selectWordAt
-            </span>
-            <span class="signature">(slot)</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>slot</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="setAlignmentToCenter">
-            <a class="share-icon" href="#setAlignmentToCenter"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                setAlignmentToCenter
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="setAlignmentToLeft">
-            <a class="share-icon" href="#setAlignmentToLeft"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                setAlignmentToLeft
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="setAlignmentToRight">
-            <a class="share-icon" href="#setAlignmentToRight"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                setAlignmentToRight
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
     
     
     
@@ -30814,8 +29799,6 @@
                 <span class="access-signature inherited"><a href="Morph.html#setExtent">inherited</a></span>
             
             
-                <span class="access-signature overrides"><a href="Morph.html#setExtent">overrides</a></span>
-            
         </h4>
     
         
@@ -30923,74 +29906,6 @@
 	
 	</tbody>
 </table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="setFontSize">
-            <a class="share-icon" href="#setFontSize"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                setFontSize
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
     
     
     
@@ -31494,119 +30409,6 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="setReceiver">
-            <a class="share-icon" href="#setReceiver"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                setReceiver
-            </span>
-            <span class="signature">(obj)</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>obj</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
         <h4 class="name" id="setRight">
             <a class="share-icon" href="#setRight"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -31679,210 +30481,6 @@
 	
 	</tbody>
 </table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="setSansSerif">
-            <a class="share-icon" href="#setSansSerif"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                setSansSerif
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="setSerif">
-            <a class="share-icon" href="#setSerif"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                setSerif
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="setText">
-            <a class="share-icon" href="#setText"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                setText
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
     
     
     
@@ -32729,119 +31327,6 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="shiftClick">
-            <a class="share-icon" href="#shiftClick"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                shiftClick
-            </span>
-            <span class="signature">(pos)</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>pos</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Point.html">Point</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
         <h4 class="name" id="show">
             <a class="share-icon" href="#show"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -32852,74 +31337,6 @@
             
             
                 <span class="access-signature inherited"><a href="Morph.html#show">inherited</a></span>
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="showIt">
-            <a class="share-icon" href="#showIt"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                showIt
-            </span>
-            <span class="signature">()</span>
-            
-            
             
             
         </h4>
@@ -33966,432 +32383,6 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="slotAt">
-            <a class="share-icon" href="#slotAt"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                slotAt
-            </span>
-            <span class="signature">(aPoint)</span><span class="type-signature">number</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>aPoint</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Point.html">Point</a></span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="slotPosition">
-            <a class="share-icon" href="#slotPosition"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                slotPosition
-            </span>
-            <span class="signature">(slot)</span><span class="type-signature"><a href="Point.html">Point</a></span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>slot</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        <a href="Point.html">Point</a>
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="startOfLine">
-            <a class="share-icon" href="#startOfLine"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                startOfLine
-            </span>
-            <span class="signature">(slot)</span><span class="type-signature">number</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>slot</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
         <h4 class="name" id="step">
             <a class="share-icon" href="#step"><span class="glyphicon glyphicon-link"></span></a>
             <span class="">
@@ -34659,76 +32650,6 @@
                 <span class="access-signature inherited"><a href="Morph.html#toggleIsDraggable">inherited</a></span>
             
             
-                <span class="access-signature overrides"><a href="Morph.html#toggleIsDraggable">overrides</a></span>
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="toggleItalic">
-            <a class="share-icon" href="#toggleItalic"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                toggleItalic
-            </span>
-            <span class="signature">()</span>
-            
-            
-            
-            
         </h4>
     
         
@@ -34797,74 +32718,6 @@
             
             
                 <span class="access-signature inherited"><a href="Morph.html#toggleVisibility">inherited</a></span>
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="toggleWeight">
-            <a class="share-icon" href="#toggleWeight"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                toggleWeight
-            </span>
-            <span class="signature">()</span>
-            
-            
             
             
         </h4>
@@ -35618,8 +33471,8 @@
             
             
             
+                <span class="access-signature inherited"><a href="Morph.html#toString">inherited</a></span>
             
-                <span class="access-signature overrides"><a href="Morph.html#toString">overrides</a></span>
             
         </h4>
     
@@ -35706,9 +33559,149 @@
         
 
     
-    <pre class="prettyprint"><code>'a TextMorph(text...)'</code></pre>
+    <pre class="prettyprint"><code>'a Morph 10 [0@0 | 50@40]'</code></pre>
     
 
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="trigger">
+            <a class="share-icon" href="#trigger"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                trigger
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="TriggerMorph.html#trigger">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="triggerDoubleClick">
+            <a class="share-icon" href="#triggerDoubleClick"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                triggerDoubleClick
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+                <span class="access-signature inherited"><a href="TriggerMorph.html#triggerDoubleClick">inherited</a></span>
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
     
 </dd>
 
@@ -35822,148 +33815,6 @@
     
     
     
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="upFrom">
-            <a class="share-icon" href="#upFrom"><span class="glyphicon glyphicon-link"></span></a>
-            <span class="">
-                upFrom
-            </span>
-            <span class="signature">(slot)</span><span class="type-signature">number</span>
-            
-            
-            
-            
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>slot</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last"></td>
-        </tr>
-    
-    </tbody>
-</table>
-
     
     
     
